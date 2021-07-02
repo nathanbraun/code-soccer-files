@@ -1,0 +1,143 @@
+city,name,wyId,officialName,type,geo
+Newcastle upon Tyne,Newcastle United,1613,Newcastle United FC,club,0
+Vigo,Celta de Vigo,692,Real Club Celta de Vigo,club,724
+Barcelona,Espanyol,691,Reial Club Deportiu Espanyol,club,724
+Vitoria-Gasteiz,Deportivo Alav\u00e9s,696,Deportivo Alav\u00e9s,club,724
+Valencia,Levante,695,Levante UD,club,724
+Troyes,Troyes,3795,Esp\u00e9rance Sportive Troyes Aube Champagne,club,250
+Getafe (Madrid),Getafe,698,Getafe Club de F\u00fatbol,club,724
+M\u00f6nchengladbach,Borussia M'gladbach,2454,Borussia VfL M\u00f6nchengladbach,club,276
+"Huddersfield, West Yorkshire",Huddersfield Town,1673,Huddersfield Town FC,club,0
+Bilbao,Athletic Club,678,Athletic Club Bilbao,club,724
+Madrid,Atl\u00e9tico Madrid,679,Club Atl\u00e9tico de Madrid,club,724
+Lyon,Olympique Lyonnais,3766,Olympique Lyonnais,club,250
+Paris,PSG,3767,Paris Saint-Germain FC,club,250
+Valencia,Valencia,674,Valencia Club de F\u00fatbol,club,724
+Madrid,Real Madrid,675,Real Madrid Club de F\u00fatbol,club,724
+Barcelona,Barcelona,676,FC Barcelona,club,724
+Las Palmas de Gran Canaria,Las Palmas,714,UD Las Palmas,club,724
+Legan\u00e9s,Legan\u00e9s,712,CD Legan\u00e9s,club,724
+Ferrara,SPAL,3204,Societ\u00e0 Polisportiva Ars et Labor 2013,club,380
+Swansea,Swansea City,10531,Swansea City AFC,club,0
+Marseille,Olympique Marseille,3771,Olympique de Marseille,club,250
+La Chapelle-sur-Erdre,Nantes,3770,FC Nantes,club,250
+Nice,Nice,3775,O.G.C. Nice C\u00f4te d'Azur,club,250
+Rennes,Rennes,3774,Stade Rennais FC,club,250
+Strasbourg,Strasbourg,3779,RC Strasbourg Alsace,club,250
+Eibar,Eibar,701,SD Eibar,club,724
+"Bournemouth, Dorset",AFC Bournemouth,1659,AFC Bournemouth,club,0
+"Brighton, East Sussex",Brighton & Hove Albion,1651,Brighton & Hove Albion FC,club,0
+Bremen,Werder Bremen,2443,SV Werder Bremen,club,276
+Leverkusen,Bayer Leverkusen,2446,TSV Bayer 04 Leverkusen,club,276
+Dortmund,Borussia Dortmund,2447,BV Borussia 09 Dortmund,club,276
+M\u00fcnchen,Bayern M\u00fcnchen,2444,FC Bayern M\u00fcnchen,club,276
+Stuttgart,Stuttgart,2445,VfB Stuttgart 1893,club,276
+Gelsenkirchen,Schalke 04,2449,FC Schalke 04,club,276
+Milano,Milan,3157,AC Milan,club,380
+Angers,Angers,3799,Angers SCO,club,250
+Torino,Juventus,3159,Juventus FC,club,380
+Roma,Roma,3158,AS Roma,club,380
+Sassuolo,Sassuolo,3315,US Sassuolo Calcio,club,380
+"Burnley, Lancashire",Burnley,1646,Burnley FC,club,0
+Le Haillan,Bordeaux,3772,FC Girondins de Bordeaux,club,250
+Hannover,Hannover 96,2455,Hannover 96,club,276
+Dijon,Dijon,3804,Dijon FCO,club,250
+Berlin,Hertha BSC,2457,Hertha BSC,club,276
+Wolfsburg,Wolfsburg,2451,VfL Wolfsburg,club,276
+Hamburg,Hamburger SV,2450,Hamburger SV,club,276
+Freiburg im Breisgau,Freiburg,2453,SC Freiburg,club,276
+Bologna,Bologna,3166,Bologna FC 1909,club,380
+Metz,Metz,3777,FC Metz,club,250
+Genova,Sampdoria,3164,UC Sampdoria,club,380
+Verona,Chievo,3165,AC Chievo Verona,club,380
+Formello,Lazio,3162,SS Lazio,club,380
+Udine,Udinese,3163,Udinese Calcio,club,380
+Milano,Internazionale,3161,FC Internazionale Milano,club,380
+Leicester,Leicester City,1631,Leicester City FC,club,0
+London,West Ham United,1633,West Ham United FC,club,0
+Stoke-on-Trent,Stoke City,1639,Stoke City FC,club,0
+Benevento,Benevento,3219,Benevento Calcio,club,380
+Saint-\u00c9tienne,Saint-\u00c9tienne,3782,AS Saint-\u00c9tienne,club,250
+Girona,Girona,756,Girona FC,club,724
+Watford,Watford,1644,Watford FC,club,0
+Sinsheim,Hoffenheim,2482,TSG 1899 Hoffenheim,club,276
+Cagliari,Cagliari,3173,Cagliari Calcio,club,380
+Ciserano,Atalanta,3172,Atalanta Bergamasca Calcio,club,380
+Firenze,Fiorentina,3176,ACF Fiorentina,club,380
+Liverpool,Everton,1623,Everton FC,club,0
+West Bromwich,West Bromwich Albion,1627,West Bromwich Albion FC,club,0
+Manchester,Manchester City,1625,Manchester City FC,club,0
+London,Tottenham Hotspur,1624,Tottenham Hotspur FC,club,0
+Augsburg,Augsburg,2481,FC Augsburg,club,276
+London,Crystal Palace,1628,Crystal Palace FC,club,0
+Monaco,Monaco,19830,AS Monaco FC,club,492
+Mainz,Mainz 05,2460,1. FSV Mainz 05,club,276
+Villeneuve-d'Ascq,Lille,3776,Lille OSC M\u00e9tropole,club,250
+Frankfurt am Main,Eintracht Frankfurt,2462,Eintracht Frankfurt,club,276
+"Southampton, Hampshire",Southampton,1619,Southampton FC,club,0
+K\u00f6ln,K\u00f6ln,2463,1. FC K\u00f6ln,club,276
+Liverpool,Liverpool,1612,Liverpool FC,club,0
+London,Chelsea,1610,Chelsea FC,club,0
+Manchester,Manchester United,1611,Manchester United FC,club,0
+Torino,Torino,3185,Torino FC,club,380
+Castel Volturno,Napoli,3187,SSC Napoli,club,380
+A Coru\u00f1a,Deportivo La Coru\u00f1a,677,Real Club Deportivo de La Coru\u00f1a,club,724
+Leipzig,RB Leipzig,2975,Rasen Ballsport Leipzig,club,276
+London,Arsenal,1609,Arsenal FC,club,0
+Caen,Caen,3783,Stade Malherbe Caen,club,250
+Toulouse,Toulouse,3780,Toulouse FC,club,250
+Montpellier,Montpellier,3787,Montpellier HSC,club,250
+Guingamp,Guingamp,3785,En Avant Guingamp,club,250
+Amiens,Amiens SC,3789,Amiens SC,club,250
+Crotone,Crotone,3197,FC Crotone,club,380
+Verona,Hellas Verona,3194,Hellas Verona FC,club,380
+Genova,Genoa,3193,Genoa CFC,club,380
+Sevilla,Real Betis,684,Real Betis Balompi\u00e9,club,724
+Donostia-San Sebasti\u00e1n,Real Sociedad,687,Real Sociedad de F\u00fatbol,club,724
+Sevilla,Sevilla,680,Sevilla FC,club,724
+Malaga,M\u00e1laga,683,M\u00e1laga Club de F\u00fatbol,club,724
+Villarreal,Villarreal,682,Villarreal Club de F\u00fatbol,club,724
+Seoul,Korea Republic,14855,Korea Republic,national,410
+Budapest,Hungary,10451,Hungary,national,348
+Istanbul,Turkey,4687,Turkey,national,792
+Moskva,Russia,14358,Russia,national,643
+Solna,Sweden,7047,Sweden,national,752
+El Menzah,Tunisia,16276,Tunisia,national,788
+"Rio de Janeiro, Rio de Janeiro",Brazil,6380,Brazil,national,76
+Frankfurt am Main,Germany,3148,Germany,national,276
+Tiran\u00eb (Tirana),Albania,8731,Albania,national,8
+Bucure\u015fti,Romania,11944,Romania,national,642
+Kyiv (Kiev),Ukraine,14622,Ukraine,national,804
+Rabat,Morocco,16216,Morocco,national,504
+Bratislava,Slovakia,14496,Slovakia,national,703
+Bogot\u00e1 D.C.,Colombia,12430,Colombia,national,170
+Ciudad de Panam\u00e1,Panama,17929,Panama,national,591
+Sydney,Australia,8493,Australia,national,36
+"Buenos Aires, Ciudad de Buenos Aires",Argentina,12274,Argentina,national,32
+Belfast,Northern Ireland,10962,Northern Ireland,national,0
+Lisboa,Portugal,9905,Portugal,national,620
+Bruxelles (Brussel),Belgium,5629,Belgium,national,56
+Br\u00f8ndby,Denmark,7712,Denmark,national,208
+Montevideo,Uruguay,15670,Uruguay,national,858
+Cardiff,Wales,10682,Wales,national,0
+San Jos\u00e9,Costa Rica,16871,Costa Rica,national,188
+London,England,2413,England,national,0
+Cairo,Egypt,16129,Egypt,national,818
+T\u014dky\u014d (Tokyo),Japan,12913,Japan,national,392
+Tehr\u0101n (Teheran),Iran,10840,Iran,national,364
+Wien,Austria,9109,Austria,national,40
+Reykjav\u00edk,Iceland,7839,Iceland,national,352
+Zagreb,Croatia,9598,Croatia,national,191
+"Coyoac\u00e1n, Ciudad de M\u00e9xico (D.F.)",Mexico,15473,Mexico,national,484
+Dublin,Republic of Ireland,8274,Republic of Ireland,national,372
+Praha,Czech Republic,11555,Czech Republic,national,203
+Dakar,Senegal,19314,Senegal,national,686
+Roma,Italy,3757,Italy,national,380
+Lima,Peru,15594,Peru,national,604
+Paris,France,4418,France,national,250
+Ar-Riy\u0101\u1e0d (Riyadh),Saudi Arabia,16521,Saudi Arabia,national,682
+Las Rozas,Spain,1598,Spain,national,724
+Beograd,Serbia,17322,Serbia,national,688
+Bern,Switzerland,6697,Switzerland,national,756
+Warszawa,Poland,13869,Poland,national,616
+Abuja,Nigeria,16823,Nigeria,national,566

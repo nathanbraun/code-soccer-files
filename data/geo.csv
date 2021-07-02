@@ -1,0 +1,235 @@
+geo_id,geo_code,country
+792,TUR,Turkey
+686,SEN,Senegal
+250,FRA,France
+528,NLD,Netherlands
+56,BEL,Belgium
+208,DNK,Denmark
+40,AUT,Austria
+352,ISL,Iceland
+246,FIN,Finland
+531,CUW,Cura\u00e7ao
+616,POL,Poland
+76,BRA,Brazil
+368,IRQ,Iraq
+288,GHA,Ghana
+752,SWE,Sweden
+504,MAR,Morocco
+688,SRB,Serbia
+703,SVK,Slovakia
+384,CIV,C\u00f4te d'Ivoire
+862,VEN,Venezuela
+380,ITA,Italy
+566,NGA,Nigeria
+410,KOR,Korea Republic
+270,GMB,Gambia
+642,ROU,Romania
+756,CHE,Switzerland
+180,COD,Congo DR
+0,XEN,England
+12,DZA,Algeria
+32,ARG,Argentina
+392,JPN,Japan
+178,COG,Congo
+724,ESP,Spain
+643,RUS,Russia
+854,BFA,Burkina Faso
+191,HRV,Croatia
+440,LTU,Lithuania
+276,DEU,Germany
+466,MLI,Mali
+858,URY,Uruguay
+4,AFG,Afghanistan
+818,EGY,Egypt
+478,MRT,Mauritania
+540,NCL,New Caledonia
+8,ALB,Albania
+604,PER,Peru
+203,CZE,Czech Republic
+600,PRY,Paraguay
+620,PRT,Portugal
+474,MTQ,Martinique
+788,TUN,Tunisia
+24,AGO,Angola
+170,COL,Colombia
+188,CRI,Costa Rica
+364,IRN,Iran
+132,CPV,Cape Verde Islands
+404,KEN,Kenya
+484,MEX,Mexico
+152,CHL,Chile
+148,TCD,Chad
+214,DOM,Dominican Republic
+156,CHN,China PR
+300,GRC,Greece
+348,HUN,Hungary
+705,SVN,Slovenia
+70,BIH,Bosnia-Herzegovina
+340,HND,Honduras
+508,MOZ,Mozambique
+764,TGO,Togo
+120,CMR,Cameroon
+710,ZAF,South Africa
+388,JAM,Jamaica
+108,BDI,Burundi
+232,ERI,Eritrea
+324,GIN,Guinea
+804,UKR,Ukraine
+638,REU,Reunion
+0,XWA,Wales
+499,MNE,Montenegro
+740,SUR,Suriname
+328,GUY,Guyana
+204,BEN,Benin
+372,IRL,Ireland Republic
+807,MKD,Macedonia FYR
+434,LBY,Libya
+408,PRK,Korea DPR
+174,COM,Comoros
+578,NOR,Norway
+562,NER,Niger
+254,GUF,French Guiana
+840,USA,United States
+266,GAB,Gabon
+442,LUX,Luxembourg
+312,GLP,Guadeloupe
+694,SLE,Sierra Leone
+36,AUS,Australia
+231,ETH,Ethiopia
+332,HTI,Haiti
+480,MUS,Mauritius
+140,CAF,Central African Republic
+591,PAN,Panama
+100,BGR,Bulgaria
+124,CAN,Canada
+360,IDN,Indonesia
+780,TTO,Trinidad and Tobago
+438,LIE,Liechtenstein
+834,TZA,Tanzania
+682,SAU,Saudi Arabia
+762,TJK,Tajikistan
+624,GNB,Guinea-Bissau
+608,PHL,Philippines
+646,RWA,Rwanda
+418,LAO,Laos
+398,KAZ,Kazakhstan
+0,XKS,Kosovo
+729,SDN,Sudan
+752,SWE,Sweden
+788,TUN,Tunisia
+364,IRN,Iran
+348,HUN,Hungary
+591,PAN,Panama
+0,XNI,Northern Ireland
+818,EGY,Egypt
+410,KOR,Korea Republic
+616,POL,Poland
+191,HRV,Croatia
+56,BEL,Belgium
+352,ISL,Iceland
+188,CRI,Costa Rica
+620,PRT,Portugal
+724,ESP,Spain
+372,IRL,Ireland Republic
+76,BRA,Brazil
+8,ALB,Albania
+250,FRA,France
+0,XSC,Scotland
+36,AUS,Australia
+566,NGA,Nigeria
+100,BGR,Bulgaria
+0,XWA,Wales
+392,JPN,Japan
+682,SAU,Saudi Arabia
+604,PER,Peru
+642,ROU,Romania
+703,SVK,Slovakia
+804,UKR,Ukraine
+276,DEU,Germany
+203,CZE,Czech Republic
+0,XEN,England
+380,ITA,Italy
+422,LBN,Lebanon
+208,DNK,Denmark
+694,SLE,Sierra Leone
+40,AUT,Austria
+688,SRB,Serbia
+170,COL,Colombia
+70,BIH,Bosnia-Herzegovina
+266,GAB,Gabon
+504,MAR,Morocco
+484,MEX,Mexico
+840,USA,United States
+882,WSM,Samoa
+756,CHE,Switzerland
+388,JAM,Jamaica
+792,TUR,Turkey
+32,ARG,Argentina
+686,SEN,Senegal
+0,XKS,Kosovo
+140,CAF,Central African Republic
+270,GMB,Gambia
+300,GRC,Greece
+678,STP,S\u00e3o Tom\u00e9 e Pr\u00edncipe
+178,COG,Congo
+528,NLD,Netherlands
+466,MLI,Mali
+180,COD,Congo DR
+384,CIV,C\u00f4te d'Ivoire
+120,CMR,Cameroon
+531,CUW,Cura\u00e7ao
+192,CUB,Cuba
+12,DZA,Algeria
+862,VEN,Venezuela
+705,SVN,Slovenia
+440,LTU,Lithuania
+578,NOR,Norway
+499,MNE,Montenegro
+807,MKD,Macedonia FYR
+288,GHA,Ghana
+858,URY,Uruguay
+226,GNQ,Equatorial Guinea
+218,ECU,Ecuador
+233,EST,Estonia
+740,SUR,Suriname
+662,LCA,St. Lucia
+152,CHL,Chile
+428,LVA,Latvia
+124,CAN,Canada
+312,GLP,Guadeloupe
+51,ARM,Armenia
+246,FIN,Finland
+404,KEN,Kenya
+376,ISR,Israel
+308,GRD,Grenada
+554,NZL,New Zealand
+60,BMU,Bermuda
+894,ZMB,Zambia
+52,BRB,Barbados
+500,MSR,Montserrat
+716,ZWE,Zimbabwe
+50,BGD,Bangladesh
+132,CPV,Cape Verde Islands
+600,PRY,Paraguay
+214,DOM,Dominican Republic
+478,MRT,Mauritania
+204,BEN,Benin
+442,LUX,Luxembourg
+324,GIN,Guinea
+254,GUF,French Guiana
+474,MTQ,Martinique
+643,RUS,Russia
+428,LVA,Latvia
+218,ECU,Ecuador
+800,UGA,Uganda
+760,SYR,Syria
+860,UZB,Uzbekistan
+728,SSD,South Sudan
+584,MHL,Moldova
+558,NIC,Nicaragua
+376,ISR,Israel
+784,ARE,United Arab Emirates
+710,ZAF,South Africa
+108,BDI,Burundi
+624,GNB,Guinea-Bissau
+586,PAK,Pakistan

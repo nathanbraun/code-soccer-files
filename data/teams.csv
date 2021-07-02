@@ -1,0 +1,33 @@
+city,team,team_id,type,geo,grouping
+Seoul,Korea Republic,14855,national,410,F
+Moskva,Russia,14358,national,643,A
+Solna,Sweden,7047,national,752,F
+El Menzah,Tunisia,16276,national,788,G
+"Rio de Janeiro, Rio de Janeiro",Brazil,6380,national,76,E
+Frankfurt am Main,Germany,3148,national,276,F
+Rabat,Morocco,16216,national,504,B
+Bogot\u00e1 D.C.,Colombia,12430,national,170,H
+Ciudad de Panam\u00e1,Panama,17929,national,591,G
+"Buenos Aires, Ciudad de Buenos Aires",Argentina,12274,national,32,D
+Lisboa,Portugal,9905,national,620,B
+Bruxelles (Brussel),Belgium,5629,national,56,G
+Br\u00f8ndby,Denmark,7712,national,208,C
+Montevideo,Uruguay,15670,national,858,A
+San Jos\u00e9,Costa Rica,16871,national,188,E
+London,England,2413,national,0,G
+Cairo,Egypt,16129,national,818,A
+T\u014dky\u014d (Tokyo),Japan,12913,national,392,H
+Tehr\u0101n (Teheran),Iran,10840,national,364,B
+Wien,Austria,9109,national,40,C
+Reykjav\u00edk,Iceland,7839,national,352,D
+Zagreb,Croatia,9598,national,191,D
+"Coyoac\u00e1n, Ciudad de M\u00e9xico (D.F.)",Mexico,15473,national,484,F
+Dakar,Senegal,19314,national,686,H
+Lima,Peru,15594,national,604,C
+Paris,France,4418,national,250,C
+Ar-Riy\u0101\u1e0d (Riyadh),Saudi Arabia,16521,national,682,A
+Las Rozas,Spain,1598,national,724,B
+Beograd,Serbia,17322,national,688,E
+Bern,Switzerland,6697,national,756,E
+Warszawa,Poland,13869,national,616,H
+Abuja,Nigeria,16823,national,566,D
