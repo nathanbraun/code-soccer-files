@@ -56,6 +56,8 @@ player_description
 '  lionel messie'
 'lionel messie'
 
+'  lionel messie'.lstrip()
+
 #######
 # bools
 #######
@@ -72,7 +74,7 @@ type(team1_won)
 teams_did_not_tie
 
 # error because test for equality is ==, not =
-# teams_tied = (team1_pts = team2_pts)  # commented out since it throws an error
+# teams_tied = (team1_goals = team2_goals)  # commented out since it throws an error
 
 shootout = (team1_goals > 3) and (team2_goals > 3)
 at_least_one_good_team = (team1_goals > 3) or (team2_goals > 3)
@@ -96,19 +98,22 @@ message
 #################
 
 # lists
-my_roster_list = ['Ruben Dias', 'Gabriel Jesus', 'Riyad Mahrez']
+roster_list = ['ruben dias', 'gabriel jesus', 'riyad mahrez']
 
-my_roster_list[0]
-my_roster_list[0:2]
-my_roster_list[-2:]
+roster_list[0]
+roster_list[0:2]
+roster_list[-2:]
 
 # dicts
-my_roster_dict = {'CB': 'ruben dias',
-                  'CF': 'gabriel jesus',
-                  'RW': 'riyad mahrez'}
+roster_dict = {'CB': 'ruben dias',
+               'CF': 'gabriel jesus',
+               'RW': 'riyad mahrez'}
 
-my_roster_dict['CB']
-my_roster_dict['LW'] = 'raheem sterling'
+roster_dict['CB']
+roster_dict['LW'] = 'raheem sterling'
+
+pos = 'RW'
+roster_dict[pos]
 
 # unpacking
 cb, dm = ['ruben dias', 'fernandinho']
@@ -124,24 +129,24 @@ dm = 'fernandinho'
 #######
 
 # looping over a list
-my_roster_list = ['ruben dias', 'gabriel jesus', 'riyad mahrez']
+roster_list = ['ruben dias', 'gabriel jesus', 'riyad mahrez']
 
-my_roster_list_upper = ['', '', '']
+roster_list_upper = ['', '', '']
 i = 0
-for player in my_roster_list:
-    my_roster_list_upper[i] = player.title()
+for player in roster_list:
+    roster_list_upper[i] = player.title()
     i = i + 1
 
-my_roster_list_upper
+roster_list_upper
 
-for x in my_roster_dict:
+for x in roster_dict:
     print(f"position: {x}")
 
-for x in my_roster_dict:
+for x in roster_dict:
    print(f"position: {x}")
-   print(f"player: {my_roster_dict[x]}")
+   print(f"player: {roster_dict[x]}")
 
-for x, y in my_roster_dict.items():
+for x, y in roster_dict.items():
     print(f"position: {x}")
     print(f"player: {y}")
 
@@ -150,29 +155,35 @@ for x, y in my_roster_dict.items():
 ################
 
 # lists
-my_roster_list
-my_roster_list_proper = [x.title() for x in my_roster_list]
-my_roster_list_proper
+roster_list
+roster_list_proper = [x.title() for x in roster_list]
+roster_list_proper
 
-my_roster_list_proper_alt = [y.title() for y in my_roster_list]
+roster_list_proper_alt = [y.title() for y in roster_list]
 
-type([x.title() for x in my_roster_list])
-[x.title() for x in my_roster_list][:2]
+type([x.title() for x in roster_list])
+[x.title() for x in roster_list][:2]
 
-my_roster_last_names = [full_name.split(' ')[1] for full_name in my_roster_list]
-my_roster_last_names
+roster_last_names = [full_name.split(' ')[1] for full_name in roster_list]
+roster_last_names
 
 full_name = 'ruben dias'
 full_name.split(' ')
 full_name.split(' ')[1]
 
-my_roster_r_only = [
-    x for x in my_roster_list if x.startswith('r')]
-my_roster_r_only
+roster_r_only = [
+    x for x in roster_list if x.startswith('r')]
 
-my_roster_r_only_title = [
-    x.title() for x in my_roster_list if x.startswith('r')]
-my_roster_r_only_title
+roster_r_only
+
+'ruben dias'.startswith('r')
+'gabriel jesus'.startswith('r')
+'riyad mahrez'.startswith('r')
+
+roster_r_only_title = [
+    x.title() for x in roster_list if x.startswith('r')]
+
+roster_r_only_title
 
 # dicts
 salary_per_player = {
@@ -192,6 +203,11 @@ sum([salary for _, salary in salary_per_player.items()])
 ###########
 len(['ruben dias', 'gabriel jesus', 'riyad mahrez'])
 
+n_goals = len(['ruben dias', 'gabriel jesus', 'riyad mahrez'])
+n_goals
+
+4 + len(['ruben dias', 'gabriel jesus', 'riyad mahrez'])
+
 def ejected(nyellow, nred):
     """
     multi line strings in python are between three double quotes
@@ -207,7 +223,7 @@ def ejected(nyellow, nred):
 ejected(1, 0)
 
 # this gives an error: nyellow is only defined inside ejected
-# print(nyewllo)
+# print(nyewllow)
 
 def ejected_noisy(nyellow, nred):
     """
@@ -232,20 +248,22 @@ def is_player_on_team(player, team):
     team.append(player)
     return team.count(player) >= 2
 
-my_roster_list = ['ruben dias', 'gabriel jesus', 'riyad mahrez']
-is_player_on_team('eric garcia', my_roster_list)
+roster_list = ['ruben dias', 'gabriel jesus', 'riyad mahrez']
+is_player_on_team('eric garcia', roster_list)
 
-my_roster_list
-is_player_on_team('eric garcia', my_roster_list)
+roster_list
+is_player_on_team('eric garcia', roster_list)
 
-my_roster_list
+roster_list
 
-#############################
+# keyword arguments
+
+ejected(nred=0, nyellow=1)
+
 # default values in functions
-#############################
 
-# error: leaving off a function
-# ejected(2)
+# error: leaving off an argument
+# ejected(1)  
 
 def ejected_wdefault(nyellow=0, nred=0):
     """
@@ -254,23 +272,25 @@ def ejected_wdefault(nyellow=0, nred=0):
     """
     return (nred >= 1) or (nyellow >= 2)
 
+
 ejected_wdefault(2)
 ejected_wdefault()
 
-def ejected2(nyellow=0, nred=0, yellow_limit=2):
-    """
-    this function takes number of yellow and red cards and returns a bool
-    indicating whether the player is ejected
-    """
-    return (nred >= 1) or (nyellow >= yellow_limit)
+def make_player_stats_dict(name, goals=0, assists=0, nyellow=0, nred=0): 
+    return {'name': name,
+            'goals': goals,
+            'assists': assists,
+            'nyellow': nyellow,
+            'nred': nred,
+            'ejected': ejected(nyellow, nred)}
 
-ejected2(2, 3)  # not doing what we want
+make_player_stats_dict("Lionel Messie", 1, 2)
 
-ejected2(2, 0, 3)  # solution 1
-ejected2(2, yellow_limit=3)  # solution 2
+make_player_stats_dict("Lionel Messie", 1, 2, 0, 1)
+make_player_stats_dict("Lionel Messie", 1, 2, nred=1)
 
 # error: can't put key word argument before positional
-# ejected2(yellow_limist=2, 1, 0)
+# make_player_stats_dict(nred=1, "Lionel Messie", 1, 2)
 
 #####################################
 # functions that take other functions
@@ -312,6 +332,6 @@ os.cpu_count()
 from os import path
 
 # change this to the location of your data
-DATA_DIR = '/Users/nathan/fantasybook/data'
-path.join(DATA_DIR, 'adp_2017.csv')
-os.path.join(DATA_DIR, 'adp_2017.csv')  # alt if we didn't want to import path
+DATA_DIR = '/Users/nathan/code-soccer-files/data'
+path.join(DATA_DIR, 'shots.csv')
+os.path.join(DATA_DIR, 'shots.csv')  # alt if we didn't want to import path
