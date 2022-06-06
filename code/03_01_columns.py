@@ -5,21 +5,19 @@ from os import path
 # stored
 # on Windows it might be something like 'C:/mydir'
 
-BB = '/Users/nathanbraun/fantasymath/basketball/nba_api/data'
-SO = '/Users/nathanbraun/fantasymath/soccer/worldcup/data'
-HY = '/Users/nathanbraun/fantasymath/hockey/data'
+DATA_DIR = './data'
 
 # load player-game data
-pg = pd.read_csv(path.join(SO, 'player_match.csv'))
+pg = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
 
 # book picks up here:
 
 # creating and modifying columns
-pg['yellow'] = 1
-pg[['name', 'min', 'yellow']].head()
+pg['yellow_cards'] = 1
+pg[['name', 'min', 'yellow_cards']].head()
 
-pg['yellow'] = 2
-pg[['name', 'min', 'yellow']].head()
+pg['yellow_cards'] = 2
+pg[['name', 'min', 'yellow_cards']].head()
 
 # math and number columns
 pg['shot_pct'] = 100*pg['goal']/pg['shot']
@@ -84,16 +82,19 @@ pg.columns = [x.lower() for x in pg.columns]
 pg.rename(columns={'min': 'minutes'}, inplace=True)
 
 # missing data
-pg['shot_pct'].isnull().head()
+pg['shot_pct'] = pg['goal']/pg['shot']
+pg[['name', 'team', 'goal', 'shot', 'shot_pct']].head(10)
 
-pg['shot_pct'].notnull().head()
+pg['shot_pct'].isnull().head(10)
 
-pg['shot_pct'].fillna(-99).head()
+pg['shot_pct'].notnull().head(10)
+
+pg['shot_pct'].fillna(-99).head(10)
 
 # Changing column types
 pg['date'].sample(5)
 
-date = '20180621'
+date = '20180618'
 
 year = date[0:4]
 month = date[4:6]
@@ -103,7 +104,7 @@ year
 month
 day
 
-# pg['month'] = pg['gameid'].str[4:6]  # commented out since it gives an error
+# pg['month'] = pg['date'].str[4:6]  # commented out since it gives an error
 
 pg['month'] = pg['date'].astype(str).str[4:6]
 pg[['name', 'team', 'month', 'date']].sample(5)

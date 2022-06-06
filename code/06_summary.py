@@ -39,7 +39,6 @@ g = (sns.FacetGrid(df)
 g.set(xlim=(-5, 60))
 plt.show()
 
-
 # all on one line
 g = sns.FacetGrid(df).map(sns.kdeplot, 'dist', shade=True)
 plt.show()

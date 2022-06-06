@@ -5,34 +5,29 @@ from os import path
 # stored
 # on Windows it might be something like 'C:/mydir'
 
-BB = '/Users/nathanbraun/fantasymath/basketball/nba_api/data'
-SO = '/Users/nathanbraun/fantasymath/soccer/worldcup/data'
-HY = '/Users/nathanbraun/fantasymath/hockey/data'
+DATA_DIR = './data'
 
-shots = pd.read_csv(path.join(SO, 'shots.csv'))  # shot data
+shots = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))  # shot data
 
 # Granularity
 
 # Grouping
 # TODO: make shot distance from this
-shots.groupby('match_id').sum()
+shots.groupby('match_id').sum().head()
 
 shots['attempt'] = 1
-
 sum_cols = ['goal', 'attempt', 'accurate', 'counter', 'opportunity']
-shots.groupby('match_id').sum()[sum_cols]
+shots.groupby('match_id').sum()[sum_cols].head()
 
 shots.groupby('match_id').agg({
     'goal': 'sum',
     'attempt': 'count',
-    'dist': ['mean', 'min', 'max']})
+    'dist': 'mean'}).head()
 
 shots.groupby('match_id').agg(
     goal = ('goal', 'sum'),
     attempt = ('attempt', 'count'),
-    ave_dist = ('dist', 'mean'),
-    min_dist = ('dist', 'min'),
-    max_dist = ('dist', 'max'))
+    ave_dist = ('dist', 'mean')).head()
 
 shots_team = shots.groupby(['match_id', 'team_id']).agg(
     goal = ('goal', 'sum'),
@@ -48,11 +43,13 @@ shots_team.loc[[(2057954, 14358), (2058017, 4418)]]
 
 # Stacking and unstacking data
 fd = shots.query("foot in ('left', 'right')").groupby(['name', 'foot'])['dist'].mean().reset_index()
+fd.head()
 
 fd_reshaped = fd.set_index(['name', 'foot']).unstack()
 fd_reshaped.head()
 
 fd_reshaped.columns = ['left', 'right']
+(fd_reshaped['right'] - fd_reshaped['left']).mean()
 
 fd_reshaped.idxmax(axis=1).value_counts()
 

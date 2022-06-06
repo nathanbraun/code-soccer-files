@@ -5,12 +5,10 @@ from os import path
 # stored
 # on Windows it might be something like 'C:/mydir'
 
-BB = '/Users/nathanbraun/fantasymath/basketball/nba_api/data'
-SO = '/Users/nathanbraun/fantasymath/soccer/worldcup/data'
-HY = '/Users/nathanbraun/fantasymath/hockey/data'
+DATA_DIR = './data'
 
 # load adp data
-pg = pd.read_csv(path.join(SO, 'player_match.csv'))
+pg = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
 # shot = pd.read_csv(path.join(SO, 'shots.csv'))
 
 pg[['match_id', 'player_id', 'date']] = (

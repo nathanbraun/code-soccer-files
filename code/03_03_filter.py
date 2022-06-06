@@ -6,13 +6,11 @@ from os import path
 # stored
 # on Windows it might be something like 'C:/mydir'
 
-BB = '/Users/nathanbraun/fantasymath/basketball/nba_api/data'
-SO = '/Users/nathanbraun/fantasymath/soccer/worldcup/data'
-HY = '/Users/nathanbraun/fantasymath/hockey/data'
+DATA_DIR = './data'
 
 # note: we're passing the index_col argument, which immediately setting the
 # index to be the player_id column
-dfm = pd.read_csv(path.join(SO, 'matches.csv'), index_col='match_id')
+dfm = pd.read_csv(path.join(DATA_DIR, 'matches.csv'), index_col='match_id')
 
 # Filtering
 
@@ -33,9 +31,9 @@ is_group_b.head()
 dfm_b = dfm.loc[is_group_b]
 
 dfm_b[['label', 'group', 'venue']].head()
-dfm_c = dfm.loc[dfm['group'] == 'Group C']
 
-dfm_c[['label', 'group', 'venue']].head()
+dfm_g = dfm.loc[dfm['group'] == 'Group G']
+dfm_g[['label', 'group', 'venue']].head()
 
 is_group_d = dfm['group'] == 'Group D'
 
@@ -50,10 +48,7 @@ dfm.drop_duplicates('venue')[['label', 'group', 'venue']]
 
 dfm.duplicated().head()
 
-dfm['venue'].duplicated().head()
-
-dfm.drop_duplicates('venue')
-dfm.loc[~dfm['venue'].duplicated()]
+dfm['group'].duplicated().head()
 
 # Combining filtering with changing columns
 

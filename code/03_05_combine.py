@@ -5,22 +5,20 @@ from os import path
 # stored
 # on Windows it might be something like 'C:/mydir'
 
-BB = '/Users/nathanbraun/fantasymath/basketball/nba_api/data'
-SO = '/Users/nathanbraun/fantasymath/soccer/worldcup/data'
-HY = '/Users/nathanbraun/fantasymath/hockey/data'
+DATA_DIR = './data'
 
-pg = pd.read_csv(path.join(SO, 'player_match.csv'))  # player-game
-games = pd.read_csv(path.join(SO, 'matches.csv'))  # game info
-player = pd.read_csv(path.join(SO, 'players.csv')) # player info
+pg = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))  # player-game
+games = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))  # game info
+player = pd.read_csv(path.join(DATA_DIR, 'players.csv')) # player info
 
 # player game data
-pg[['name', 'team', 'match_id', 'shot', 'goal', 'assist']].head(5)
+pg[['player_id', 'match_id', 'name', 'team', 'shot', 'goal', 'assist']].head(5)
 
 # game table
-games.head()
+player[['player_id', 'player_name', 'pos', 'team', 'birth_date']].head()
 
 # Merge Question 1. What columns are you joining on?
-pd.merge(pg, player[['player_id', 'birth_date']], on='player_id').sample(5)
+pd.merge(pg, player[['player_id', 'birth_date']], on='player_id').head(5)
 
 pass_df = pg[['match_id', 'player_id', 'pass', 'assist']]
 shot_df = pg[['match_id', 'player_id', 'shot', 'goal']]
@@ -31,11 +29,11 @@ combined.head()
 # Merge Question 2. Are you doing a 1:1, 1:many (or many:1), or many:many
 # join?player.head()
 
-games['match_id'].duplicated().any()
+player['player_id'].duplicated().any()
 
-combined['match_id'].duplicated().any()
+combined['player_id'].duplicated().any()
 
-pd.merge(combined, games).head()
+pd.merge(combined, player[['player_id', 'player_name', 'pos', 'team']]).head()
 
 # pd.merge(combined, games, validate='1:1')  # this will fail since it's 1:m
 
@@ -61,6 +59,10 @@ comb_outer = pd.merge(goal_df, assist_df, how='outer', indicator=True)
 comb_outer.shape
 
 comb_outer['_merge'].value_counts()
+
+comb_outer.query("_merge == 'both'")['player_id'].value_counts()
+
+player.query("player_id == 25776")[['player_name', 'pos', 'team']]
 
 # More on pd.merge
 # left_on and right_on
@@ -93,6 +95,8 @@ goal_df = (pg.loc[pg['goal'] > 0, ['match_id', 'player_id', 'goal']]
 assist_df = (pg.loc[pg['assist'] > 0, ['match_id', 'player_id', 'assist']]
              .set_index(['match_id', 'player_id']))
 
+goal_df.head()
+
 pd.concat([goal_df, assist_df], axis=1).head()
 
 tackle_df = (pg.loc[pg['tackle'] > 0, ['match_id', 'player_id', 'tackle']]
@@ -111,6 +115,8 @@ pd.concat([mids, fwds]).shape
 
 mids_reset = mids.reset_index(drop=True)
 fwds_reset = fwds.reset_index(drop=True)
+
+mids_reset.head()
 
 pd.concat([mids_reset, fwds_reset]).sort_index().head()
 

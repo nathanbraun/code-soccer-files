@@ -256,16 +256,27 @@ is_player_on_team('eric garcia', roster_list)
 
 roster_list
 
-# keyword arguments
+# function arguments
+## Positional vs Keyword Arguments
 
-ejected(nred=0, nyellow=1)
+ejected(1, 0)
+ejected(0, 1)  # order matters!
 
-# default values in functions
+ejected?
+
+ejected(nred=0, nyellow=1)  # keyword arguments
+
+ejected(1, nred=0)
+
+# error: keyword arguments can't come before positional arguments
+# ejected(nred=0, 1)
+
+## Default Values for Arguments
 
 # error: leaving off an argument
 # ejected(1)  
 
-def ejected_wdefault(nyellow=0, nred=0):
+def ejected_wdefault(nyellow, nred=0):
     """
     this function takes number of yellow and red cards and returns a bool
     indicating whether the player is ejected
@@ -274,20 +285,17 @@ def ejected_wdefault(nyellow=0, nred=0):
 
 
 ejected_wdefault(2)
-ejected_wdefault()
 
-def make_player_stats_dict(name, goals=0, assists=0, nyellow=0, nred=0): 
-    return {'name': name,
-            'goals': goals,
-            'assists': assists,
-            'nyellow': nyellow,
-            'nred': nred,
-            'ejected': ejected(nyellow, nred)}
+# error: leaving out required argument
+# ejected_wdefault(nred=0)
 
-make_player_stats_dict("Lionel Messie", 1, 2)
-
-make_player_stats_dict("Lionel Messie", 1, 2, 0, 1)
-make_player_stats_dict("Lionel Messie", 1, 2, nred=1)
+# error: 
+# def ejected_wdefault_wrong(nyellow=0, nred):
+#     """
+#     this function takes number of yellow and red cards and returns a bool
+#     indicating whether the player is ejected
+#     """
+#     return (nred >= 1) or (nyellow >= 2)
 
 # error: can't put key word argument before positional
 # make_player_stats_dict(nred=1, "Lionel Messie", 1, 2)
