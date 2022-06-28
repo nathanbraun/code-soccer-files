@@ -1,64 +1,81 @@
 import pandas as pd
+from pandas import DataFrame
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 from os import path
 import matplotlib.image as mpimg
 
+pd.options.mode.chained_assignment = None
+%matplotlib qt
+
 # change this to the directory where the csv files that come with the book are
 # stored
 # on Windows it might be something like 'C:/mydir'
 
-DATA_DIR = '/Users/nathanbraun/fantasymath/code-soccer-files/data'
-FIG_DIR = '/Users/nathanbraun/fantasymath/code-soccer-files/fig'
+DATA_DIR = './data'
+FIG_DIR = './figures'
 
 ###############
 # distributions
 ###############
 
-df = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))
+pm = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
 
 ###############
 # summary stats
 ###############
 
-# book picks up here:
-
 # quantile function and describe
 
-df['dist'].quantile(.9)
-df[['dist', 'time']].describe()
+pm['pass'].quantile(.9)
+pm[['pass', 'shot']].describe()
 
 ##########
 # plotting
 ##########
 
-# basic displot
-g = (sns.FacetGrid(df)
-     .map(sns.kdeplot, 'dist', shade=True))
-g.set(xlim=(-5, 60))
-plt.show()
-
-# all on one line
-g = sns.FacetGrid(df).map(sns.kdeplot, 'dist', shade=True)
+# basic displot - all on one line
+g = (sns.FacetGrid(pm).map(sns.kdeplot, 'pass', shade=True))
+g.set(xlim=(-5, 120))
 plt.show()
 
 # on seperate lines so it's clearer it's a two step process
-g = (sns.FacetGrid(df)
+g = (sns.FacetGrid(pm)
      .map(sns.kdeplot, 'dist', shade=True))
 
-# density plot of standard points by goal or not
-g = (sns.FacetGrid(df, hue='goal')
-     .map(sns.kdeplot, 'dist', shade=True)
-     .add_legend())
+# hue
+g = (sns.FacetGrid(pm, hue='pos')
+     .map(sns.kdeplot, 'pass', shade=True)
+     .add_legend()
+     .set(xlim=(-5, 120)))
 plt.show()
 
-# density plot of distance by goal and body part
-g = (sns.FacetGrid(df, hue='goal', col='foot', height=2)
-     .map(sns.kdeplot, 'dist', shade=True)
-     .add_legend())
-g.set(xlim=(0, 50))
+# add col
+g = (sns.FacetGrid(pm, hue='pos', col='side')
+     .map(sns.kdeplot, 'pass', shade=True)
+     .add_legend()
+     .set(xlim=(-5, 120)))
 plt.show()
+
+# add col order
+g = (sns.FacetGrid(pm, hue='pos', col='side', col_order=['left', 'central',
+                       'right'])
+     .map(sns.kdeplot, 'pass', shade=True)
+     .add_legend()
+     .set(xlim=(-5, 160)))
+plt.show()
+
+# rows
+pm.loc[pm['pos'] == 'GKP', 'side'] = 'central'
+g = (sns.FacetGrid(pm, hue='pos', col='side', row='pos',
+                   col_order=['left', 'central', 'right'],
+                   row_order=['FWD', 'MID', 'DEF', 'GKP'],
+                   )
+     .map(sns.kdeplot, 'pass', shade=True)
+     .add_legend()
+     .set(xlim=(-5, 160)))
+
 
 #########################
 # processing for plotting
@@ -67,10 +84,9 @@ plt.show()
 # example of reshaping data to get it into the shape we want
 
 # thinking about seaborn: specify seperate columns for columns, hue (color),
-# thing we're plotting (points)
-# so we need points in one column, then another type for scoring type
+# thing we're plotting (goals)
+# so we need goals in one column, then another type for scoring type
 
-# TODO: figure out something for reshaping into same columns
 matches = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))
 
 # book picks up again here:
@@ -98,7 +114,62 @@ plt.show()
 # relationships between variables
 #################################
 
-pm = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
+dfp = pd.read_csv(path.join(DATA_DIR, 'players.csv'))
+
+# basic scatter plot
+g = sns.relplot(x='weight', y='height', data=dfp)
+
+# with hue
+g = sns.relplot(x='jweight', y='jheight', hue='pos', data=dfp)
+
+# adding jitter
+import random
+
+random.uniform(0, 1)
+[random.gauss(0, 1) for _ in range(10)]
+
+dfp['jheight'] = dfp['height'].apply(lambda x: x + random.gauss(0, 1))
+dfp['jweight'] = dfp['weight'].apply(lambda x: x + random.gauss(0, 1))
+
+# col argument
+g = sns.relplot(x='jweight', y='jheight', hue='pos', col='team', col_wrap=5,
+                data=dfp)
+
+# scatter plot
+g = (sns.FacetGrid(dfp, hue='team')
+    .map(sns.kdeplot, 'weight', shade=True)
+    .add_legend())
+
+# load match data
+matches = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))
+pm = pd.merge(pm, matches[['match_id', 'home_team', 'away_team']], how='left')
+pm['opp'] = np.nan
+pm.loc[pm['team'] == pm['home_team'], 'opp'] = pm['away_team']
+pm.loc[pm['team'] == pm['away_team'], 'opp'] = pm['home_team']
+
+# group player data to team level
+_tm = pm.groupby(['team', 'opp', 'match_id'])[['shot', 'goal', 'assist', 'pass',
+    'pass_accurate', 'tackle', 'accel', 'counter', 'opportunity', 'keypass',
+    'own_goal', 'interception', 'smart', 'clearance', 'cross', 'air_duel',
+    'air_duel_won', 'gk_leave_line', 'gk_save_attempt', 'throw',
+    'corner']].sum().reset_index()
+
+tm = pd.merge(_tm, _tm.drop('opp', axis=1), left_on=['match_id', 'opp'],
+               right_on=['match_id', 'team'], suffixes=('', '_opp'))
+tm['win'] = tm['goal'] > tm['goal_opp']
+
+# book picks back up here
+# correlations
+tm[['shot', 'goal', 'shot_opp', 'goal_opp', 'pass_opp', 'pass', 'win']].corr().round(2)
+
+sns.relplot(x='shot', y='goal', data=tm)
+
+tm['jshot'] = tm['shot'].apply(lambda x: x + random.gauss(0, 1))
+tm['jgoal'] = tm['goal'].apply(lambda x: x + random.gauss(0, 1))
+
+sns.relplot(x='jshot', y='jgoal', data=tm)
+
+sns.relplot(x='jshot', y='pass', data=tm)
 
 # passes vs player rank
 sns.relplot(x='pass', y='player_rank', data=pm)
@@ -112,27 +183,6 @@ plt.show()
 sns.relplot(x='pass', y='player_rank', hue='pos', col='team', data=pm,
             col_wrap=4)
 
-#############
-# correlation
-#############
-pm = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
-
-['name', 'team', 'min', 'shot', 'goal', 'assist', 'player_id', 'match_id',
- 'date', 'pass', 'pass_accurate', 'tackle', 'accel', 'counter', 'opportunity',
- 'keypass', 'own_goal', 'interception', 'smart', 'clearance', 'cross',
- 'air_duel', 'air_duel_won', 'gk_leave_line', 'gk_save_attempt', 'throw',
- 'corner', 'pos', 'side', 'player_rank', 'started']
-
-pm[['min', 'shot', 'goal', 'pass', 'pass_accurate', 'player_rank']].corr()
-
-# scatter plot of 0.1489 correlation
-g = sns.relplot(x='pass_accurate', y='player_rank', data=pm)
-plt.show()
-
-# scatter plot of 0.99 correlation
-g = sns.relplot(x='pass', y='pass_accurate', data=dft)
-plt.show()
-
 ########################
 # line plots with python
 ########################
@@ -140,20 +190,30 @@ plt.show()
 # let's look at scoring by week
 
 # minor processing
-score_long = pd.merge(score_long, matches[['match_id', 'group', 'venue', 'gameweek']])
-score_long.loc[score_long['gameweek'] == 0, 'gameweek'] = 4
+
+matches['day'] = (pd.to_datetime(matches['date']) -
+    pd.to_datetime(matches['date'].min())).dt.days
+matches['total_goals'] = matches['home_score'] + matches['away_score']
+
+g = sns.relplot(x='day', y='total_goals', kind='line', data=matches)
+
+ave_total_goals = matches.groupby('day')['total_goals'].sum().reset_index()
+g = sns.relplot(x='day', y='total_goals', kind='line', data=ave_total_goals)
 
 # by group
-g = sns.relplot(x='gameweek', y='score', kind='line', data=score_long,
+g = sns.relplot(x='day', y='score', kind='line', data=score_long,
                 hue='group', col='group', col_wrap=4)
 
 # by team (just the line)
-g = sns.relplot(x='gameweek', y='score', kind='line', data=score_long,
+g = sns.relplot(x='day', y='score', kind='line', data=score_long,
                 hue='team', col='group', col_wrap=4)
 
 # shot distance by foot/minute
-df['pmin'] = df['time'] // 60
-g = sns.relplot(x='pmin', y='dist', kind='line', hue='foot', data=df, row='period')
+dfs = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))
+
+dfs['min_period'] = dfs['time'] // 60
+g = sns.relplot(x='min_period', y='dist', kind='line', hue='foot', data=dfs,
+                row='period')
 plt.show()
 
 ##############
@@ -161,112 +221,101 @@ plt.show()
 ##############
 
 # basic plot
-g = (sns.FacetGrid(df, col='foot', hue='goal')
-     .map(sns.kdeplot, 'dist', shade=True))
+g = (sns.FacetGrid(pm, col='pos')
+     .map(sns.kdeplot, 'pass', shade=True))
+
+plt.show()
+
 
 # wrap columns
-g = (sns.FacetGrid(df, col='foot', hue='goal', col_wrap=2)
-     .map(sns.kdeplot, 'dist', shade=True))
+g = (sns.FacetGrid(pm, col='pos', col_wrap=2)
+     .map(sns.kdeplot, 'pass', shade=True))
 
 # adding a title
-g.fig.subplots_adjust(top=0.9) # adding a title
-g.fig.suptitle('Distribution of Shot Distances by Body Part, Made')
+g.fig.subplots_adjust(top=0.9)
+g.fig.suptitle('Distribution of No of Passes by Position')
 
 # modifying options
-g.set(xlim=(-5, 40))
+g.set(xlim=(-5, 120))
 
-g.set_xlabels('Ft')
+g.set_xlabels('Passes')
 g.set_ylabels('Density')
 
 # saving
-g.savefig(path.join(FIG_DIR, 'shot_dist_foot_made.png'))
+g.savefig(path.join(FIG_DIR, 'no_passes_by_position.png'))
 
 #############
 # shot charts
 #############
 
-df['y1'] = 100 - df['y1']
+dfs = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))
+dfs[['name', 'dist', 'foot', 'goal', 'x1', 'y1']].head(5)
 
-df['x'] = df['x1']*115/100
-df['y'] = df['y1']*74/100
+dfs['x'] = dfs['x1']*115/100
+dfs['y'] = (100 - dfs['y1'])*74/100
 
-map_img = mpimg.imread(path.join(FIG_DIR, 'field_coordinates_cropped.png'))
-
-# scatter plot with field overlay
-g = sns.relplot(data=df, x='x1', y='y1', kind='scatter', s=10)
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
+# shot data
+g = sns.relplot(data=dfs, x='x', y='y', kind='scatter')
 g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
+
+map_img = mpimg.imread('./fig/soccer_field.png')
+
+# scatter plot with field overlay
+g = sns.relplot(data=dfs, x='x', y='y', kind='scatter')
+g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
+g.despine(left=True, bottom=True)
+for ax in g.fig.axes:
+    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
+
 plt.show()
 
 # how about a bit of jitter
-df['x_j'] = np.random.uniform(df['x1'] - 0.5, df['x1'] + 0.5)*115/100
-df['y_j'] = np.random.uniform(df['y1'] - 0.5, df['y1'] + 0.5)*74/100
+dfs['xj'] = dfs['x'].apply(lambda x: x + random.gauss(0, 1))
+dfs['yj'] = dfs['y'].apply(lambda x: x + random.gauss(0, 1))
 
-g = sns.relplot(data=df, x='x_j', y='y_j', kind='scatter')
+g = sns.relplot(data=dfs, x='xj', y='yj', kind='scatter')
 for ax in g.fig.axes:
     ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
 g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
 plt.show()
 
-# add some hue
-g = sns.relplot(data=df, x='x_j', y='y_j', kind='scatter',
-                hue='goal', style='goal')
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
-g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
-g.despine(left=True, bottom=True)
-plt.show()
+# putting it in a function
+def shot_chart(df, **kwargs):
+    g = sns.relplot(data=df, x='xj', y='yj', kind='scatter', **kwargs)
+    g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
+    g.despine(left=True, bottom=True)
+
+    for ax in g.fig.axes:
+        ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
+
+    return g
+
+shot_chart(dfs, hue='goal', style='goal')
+shot_chart(dfs, col='foot', hue='foot')
 
 # and columns
-g = sns.relplot(data=df, x='x_j', y='y_j', kind='scatter', col='opportunity',
-                hue='goal', style='goal')
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
-g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
-g.despine(left=True, bottom=True)
-plt.show()
-
-# counter?
-g = sns.relplot(data=df, x='x_j', y='y_j', kind='scatter', col='counter',
-                hue='goal', style='goal')
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
-g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
-g.despine(left=True, bottom=True)
-plt.show()
-
-# finally, teams
 teams = pd.read_csv(path.join(DATA_DIR, 'teams.csv'))
-df = pd.merge(df, teams[['team_id', 'team']], how='left')
+dfs = pd.merge(dfs, teams[['team_id', 'team']], how='left')
 
-g = sns.relplot(data=df, x='x_j', y='y_j', kind='scatter', col='team',
-                col_wrap=4, hue='goal', style='goal', height=2, aspect=115/74)
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
-g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
-g.despine(left=True, bottom=True)
-g.savefig(path.join(FIG_DIR, 'shot_chart_teams.png'))
-
-plt.show()
-
+shot_chart(dfs, hue='goal', style='goal', col='team', height=3, col_wrap=4,
+           s=10)
 
 # now let's try a contour plot
-g = (sns.FacetGrid(df)
-     .map(sns.kdeplot, 'x', 'y', alpha=0.5)
+g = (sns.FacetGrid(dfs, col='foot', hue='foot')
+     .map(sns.kdeplot, 'x', 'y', alpha=0.5, shade=True)
      .add_legend())
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
-plt.show()
-
-# same thing, rows and columns
-g = (sns.FacetGrid(df, col='foot', hue='foot', row='goal')
-     .map(sns.kdeplot, 'x', 'y', alpha=0.5)
-     .add_legend())
-for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
 g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
-plt.show()
+for ax in g.fig.axes:
+    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
+
+# add goal row, turn shading off
+g = (sns.FacetGrid(dfs, col='foot', hue='foot')
+     .map(sns.kdeplot, 'x', 'y', alpha=0.5)
+     .add_legend())
+g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
+g.despine(left=True, bottom=True)
+for ax in g.fig.axes:
+    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])

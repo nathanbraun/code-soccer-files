@@ -2,7 +2,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 from os import path
 
-DATA_DIR = '/Users/nathanbraun/fantasymath/soccer/worldcup/data'
+DATA_DIR = './data'
 
 ###################
 # linear regression
@@ -26,10 +26,10 @@ def prob_of_goal(yds):
     return (b0 + b1*yds + b2*(yds**2))
 
 prob_of_goal(1)
+prob_of_goal(15)
 prob_of_goal(25)
-prob_of_goal(30)
 
 # process
 df['goal_hat'] = results.predict(df)
-df[['goal', 'goal_hat']].head(10)
+df[['goal', 'goal_hat']].head(5)
 
