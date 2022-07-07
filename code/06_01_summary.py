@@ -20,7 +20,24 @@ FIG_DIR = './figures'
 # distributions
 ###############
 
-pm = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
+dfs = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))
+dfpm = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
+dfm = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))
+dfp = pd.read_csv(path.join(DATA_DIR, 'players.csv'))
+dft = pd.read_csv(path.join(DATA_DIR, 'teams.csv'))
+dftm = pd.read_csv(path.join(DATA_DIR, 'team_match.csv'))
+
+# processing
+dfpm = pd.merge(dfpm, dfm[['match_id', 'home_team', 'away_team']], how='left')
+dfpm['opp'] = np.nan
+dfpm.loc[dfpm['team'] == dfpm['home_team'], 'opp'] = dfpm['away_team']
+dfpm.loc[dfpm['team'] == dfpm['away_team'], 'opp'] = dfpm['home_team']
+
+dfp = pd.merge(dfp, dft[['team_id', 'grouping']], how='left')
+
+dfs['min_period'] = dfs['time'] // 60
+
+dfs = pd.merge(dfs, dft[['team_id', 'team']], how='left')
 
 ###############
 # summary stats
@@ -28,38 +45,40 @@ pm = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
 
 # quantile function and describe
 
-pm['pass'].quantile(.9)
-pm[['pass', 'shot']].describe()
+dfpm['pass'].quantile(.9)
+dfpm[['pass', 'shot']].describe()
+
+dfpm['shot'].value_counts(normalize=True).sort_index().head(10)
 
 ##########
 # plotting
 ##########
 
 # basic displot - all on one line
-g = (sns.FacetGrid(pm).map(sns.kdeplot, 'pass', shade=True))
+g = (sns.FacetGrid(dfpm).map(sns.kdeplot, 'pass', shade=True))
 g.set(xlim=(-5, 120))
 plt.show()
 
 # on seperate lines so it's clearer it's a two step process
-g = (sns.FacetGrid(pm)
+g = (sns.FacetGrid(dfpm)
      .map(sns.kdeplot, 'dist', shade=True))
 
 # hue
-g = (sns.FacetGrid(pm, hue='pos')
+g = (sns.FacetGrid(dfpm, hue='pos')
      .map(sns.kdeplot, 'pass', shade=True)
      .add_legend()
      .set(xlim=(-5, 120)))
 plt.show()
 
 # add col
-g = (sns.FacetGrid(pm, hue='pos', col='side')
+g = (sns.FacetGrid(dfpm, hue='pos', col='side')
      .map(sns.kdeplot, 'pass', shade=True)
      .add_legend()
      .set(xlim=(-5, 120)))
 plt.show()
 
 # add col order
-g = (sns.FacetGrid(pm, hue='pos', col='side', col_order=['left', 'central',
+g = (sns.FacetGrid(dfpm, hue='pos', col='side', col_order=['left', 'central',
                        'right'])
      .map(sns.kdeplot, 'pass', shade=True)
      .add_legend()
@@ -67,8 +86,8 @@ g = (sns.FacetGrid(pm, hue='pos', col='side', col_order=['left', 'central',
 plt.show()
 
 # rows
-pm.loc[pm['pos'] == 'GKP', 'side'] = 'central'
-g = (sns.FacetGrid(pm, hue='pos', col='side', row='pos',
+dfpm.loc[dfpm['pos'] == 'GKP', 'side'] = 'central'
+g = (sns.FacetGrid(dfpm, hue='pos', col='side', row='pos',
                    col_order=['left', 'central', 'right'],
                    row_order=['FWD', 'MID', 'DEF', 'GKP'],
                    )
@@ -87,21 +106,20 @@ g = (sns.FacetGrid(pm, hue='pos', col='side', row='pos',
 # thing we're plotting (goals)
 # so we need goals in one column, then another type for scoring type
 
-matches = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))
-
 # book picks up again here:
-matches[['home_team', 'away_team', 'home_score', 'away_score']].head()  # have this
+(dfm[['date', 'home_team', 'away_team', 'home_score', 'away_score']]
+ .sort_values('date').head())
 
-def home_away_score_df(_df, location):
-    _df = _df[['match_id', 'date', f'{location}_team', f'{location}_score']]
-    _df.columns = ['match_id', 'date', 'team', 'score']
-    _df['location'] = location
-    return _df
+def home_away_score_df(df, location):
+    df = df[['match_id', 'date', f'{location}_team', f'{location}_score']]
+    df.columns = ['match_id', 'date', 'team', 'score']
+    df['location'] = location
+    return df
 
-home_away_score_df(matches, 'home').head()
+home_away_score_df(dfm, 'home').head()
 
 score_long = pd.concat([
-    home_away_score_df(matches, loc) for loc in ['home', 'away']],
+    home_away_score_df(dfm, loc) for loc in ['home', 'away']],
     ignore_index=True)
 
 # now can plot points by scoring system and position
@@ -113,8 +131,6 @@ plt.show()
 #################################
 # relationships between variables
 #################################
-
-dfp = pd.read_csv(path.join(DATA_DIR, 'players.csv'))
 
 # basic scatter plot
 g = sns.relplot(x='weight', y='height', data=dfp)
@@ -135,84 +151,64 @@ dfp['jweight'] = dfp['weight'].apply(lambda x: x + random.gauss(0, 1))
 g = sns.relplot(x='jweight', y='jheight', hue='pos', col='team', col_wrap=5,
                 data=dfp)
 
-# scatter plot
-g = (sns.FacetGrid(dfp, hue='team')
+# distribution of weight by team
+# note -- for plot in book did some minor labeling/reordering using hue_order
+# and label_order arguments
+g = (sns.FacetGrid(dfp, hue='team', col='grouping', col_wrap=2, aspect=2,
+                   col_order=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])
     .map(sns.kdeplot, 'weight', shade=True)
     .add_legend())
 
-# load match data
-matches = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))
-pm = pd.merge(pm, matches[['match_id', 'home_team', 'away_team']], how='left')
-pm['opp'] = np.nan
-pm.loc[pm['team'] == pm['home_team'], 'opp'] = pm['away_team']
-pm.loc[pm['team'] == pm['away_team'], 'opp'] = pm['home_team']
+# contour plots
+# shade
+g = (sns.FacetGrid(dfp, col='pos', hue='pos', col_wrap=2, aspect=2)
+     .map(sns.kdeplot, 'weight', 'height', shade=True))
 
-# group player data to team level
-_tm = pm.groupby(['team', 'opp', 'match_id'])[['shot', 'goal', 'assist', 'pass',
-    'pass_accurate', 'tackle', 'accel', 'counter', 'opportunity', 'keypass',
-    'own_goal', 'interception', 'smart', 'clearance', 'cross', 'air_duel',
-    'air_duel_won', 'gk_leave_line', 'gk_save_attempt', 'throw',
-    'corner']].sum().reset_index()
+# no shade
+g = (sns.FacetGrid(dfp, col='pos', hue='pos', col_wrap=2, aspect=2)
+     .map(sns.kdeplot, 'weight', 'height'))
 
-tm = pd.merge(_tm, _tm.drop('opp', axis=1), left_on=['match_id', 'opp'],
-               right_on=['match_id', 'team'], suffixes=('', '_opp'))
-tm['win'] = tm['goal'] > tm['goal_opp']
-
-# book picks back up here
+##############
 # correlations
-tm[['shot', 'goal', 'shot_opp', 'goal_opp', 'pass_opp', 'pass', 'win']].corr().round(2)
+##############
+dftm[['shot', 'goal', 'shot_opp', 'goal_opp', 'pass_opp', 'pass', 'win']].corr().round(2)
 
-sns.relplot(x='shot', y='goal', data=tm)
+sns.relplot(x='shot', y='goal', data=dftm)
 
-tm['jshot'] = tm['shot'].apply(lambda x: x + random.gauss(0, 1))
-tm['jgoal'] = tm['goal'].apply(lambda x: x + random.gauss(0, 1))
+dftm['jshot'] = dftm['shot'].apply(lambda x: x + random.gauss(0, 1))
+dftm['jgoal'] = dftm['goal'].apply(lambda x: x + random.gauss(0, 1))
 
-sns.relplot(x='jshot', y='jgoal', data=tm)
+sns.relplot(x='jshot', y='jgoal', data=dftm)
 
-sns.relplot(x='jshot', y='pass', data=tm)
+sns.relplot(x='jshot', y='pass', data=dftm)
 
 # passes vs player rank
-sns.relplot(x='pass', y='player_rank', data=pm)
+sns.relplot(x='pass', y='player_rank', data=dfpm)
 plt.show()
 
 # passes vs player rank - by position
-sns.relplot(x='pass', y='player_rank', hue='pos', data=pm)
+sns.relplot(x='pass', y='player_rank', hue='pos', data=dfpm)
 plt.show()
 
 # passes vs player rank - by position and team
-sns.relplot(x='pass', y='player_rank', hue='pos', col='team', data=pm,
+sns.relplot(x='pass', y='player_rank', hue='pos', col='team', data=dfpm,
             col_wrap=4)
 
 ########################
 # line plots with python
 ########################
 
-# let's look at scoring by week
+dfm['total_goals'] = dfm['home_score'] + dfm['away_score']
 
-# minor processing
+# note: day is overall day of the tournament
+g = sns.relplot(x='day', y='total_goals', kind='line', data=dfm)
 
-matches['day'] = (pd.to_datetime(matches['date']) -
-    pd.to_datetime(matches['date'].min())).dt.days
-matches['total_goals'] = matches['home_score'] + matches['away_score']
-
-g = sns.relplot(x='day', y='total_goals', kind='line', data=matches)
-
-ave_total_goals = matches.groupby('day')['total_goals'].sum().reset_index()
+ave_total_goals = dfm.groupby('day')['total_goals'].mean().reset_index()
 g = sns.relplot(x='day', y='total_goals', kind='line', data=ave_total_goals)
 
-# by group
-g = sns.relplot(x='day', y='score', kind='line', data=score_long,
-                hue='group', col='group', col_wrap=4)
-
-# by team (just the line)
-g = sns.relplot(x='day', y='score', kind='line', data=score_long,
-                hue='team', col='group', col_wrap=4)
-
 # shot distance by foot/minute
-dfs = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))
-
-dfs['min_period'] = dfs['time'] // 60
-g = sns.relplot(x='min_period', y='dist', kind='line', hue='foot', data=dfs,
+g = sns.relplot(x='min_period', y='dist_m', kind='line', hue='foot',
+                data=dfs.query("period in ('1H', '2H')"),
                 row='period')
 plt.show()
 
@@ -221,14 +217,13 @@ plt.show()
 ##############
 
 # basic plot
-g = (sns.FacetGrid(pm, col='pos')
+g = (sns.FacetGrid(dfpm, col='pos')
      .map(sns.kdeplot, 'pass', shade=True))
 
 plt.show()
 
-
 # wrap columns
-g = (sns.FacetGrid(pm, col='pos', col_wrap=2)
+g = (sns.FacetGrid(dfpm, col='pos', col_wrap=2)
      .map(sns.kdeplot, 'pass', shade=True))
 
 # adding a title
@@ -248,11 +243,10 @@ g.savefig(path.join(FIG_DIR, 'no_passes_by_position.png'))
 # shot charts
 #############
 
-dfs = pd.read_csv(path.join(DATA_DIR, 'shots.csv'))
 dfs[['name', 'dist', 'foot', 'goal', 'x1', 'y1']].head(5)
 
-dfs['x'] = dfs['x1']*115/100
-dfs['y'] = (100 - dfs['y1'])*74/100
+dfs['x'] = dfs['x1']*120/100
+dfs['y'] = (100 - dfs['y1'])*75/100
 
 # shot data
 g = sns.relplot(data=dfs, x='x', y='y', kind='scatter')
@@ -266,7 +260,7 @@ g = sns.relplot(data=dfs, x='x', y='y', kind='scatter')
 g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
 for ax in g.fig.axes:
-    ax.imshow(map_img, zorder=0, extent=[0, 115, 0, 74])
+    ax.imshow(map_img, zorder=0, extent=[0, 120, 0, 75])
 
 plt.show()
 
@@ -296,9 +290,6 @@ shot_chart(dfs, hue='goal', style='goal')
 shot_chart(dfs, col='foot', hue='foot')
 
 # and columns
-teams = pd.read_csv(path.join(DATA_DIR, 'teams.csv'))
-dfs = pd.merge(dfs, teams[['team_id', 'team']], how='left')
-
 shot_chart(dfs, hue='goal', style='goal', col='team', height=3, col_wrap=4,
            s=10)
 
