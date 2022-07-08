@@ -11,7 +11,7 @@ dfp = pd.read_csv(path.join(DATA_DIR, 'players.csv'))
 
 dfs['goal'] = dfs['goal'].astype(int)
 dfs['header'] = dfs['foot'] == 'head/body'
-dfs['dist_sq'] = dfs['dist'] ** 2
+dfs['dist_m_sq'] = dfs['dist_m'] ** 2
 
 #########################
 # holding things constant
@@ -25,12 +25,12 @@ model = smf.ols(formula=
 results = model.fit()
 results.summary2()
 
-dfs.groupby('header')['dist'].mean()
+dfs.groupby('header')['dist_m'].mean()
 
 # fine but headers are close
 model = smf.ols(formula=
         """
-        goal ~ header + dist
+        goal ~ header + dist_m
         """, data=dfs)
 results = model.fit()
 results.summary2()
@@ -44,13 +44,15 @@ results.summary2()
 
 pd.get_dummies(dfs['foot']).head()
 
-model = smf.ols(formula="goal ~ C(foot) + dist + dist_sq", data=dfs)
+model = smf.ols(formula="goal ~ C(foot) + dist_m + dist_m_sq", data=dfs)
 results = model.fit()
 results.summary2()
 
 dfs['foot'].value_counts()
 
-model = smf.ols(formula="goal ~ C(foot, Treatment(reference='right')) + dist + dist_sq", data=dfs)
+model = smf.ols(
+    formula="goal ~ C(foot, Treatment(reference='right')) + dist_m + dist_m_sq",
+    data=dfs)
 results = model.fit()
 results.summary2()
 
@@ -58,21 +60,21 @@ results.summary2()
 # squaring variables
 ####################
 
-dfs['dist2'] = dfs['dist'] ** 2
-model = smf.ols(formula="goal ~ dist + dist2", data=dfs)
+dfs['dist2'] = dfs['dist_m'] ** 2
+model = smf.ols(formula="goal ~ dist_m + dist2", data=dfs)
 results = model.fit()
 results.summary2()
 
 # cubed variables
-dfs['dist3'] = dfs['dist'] ** 3
-model = smf.ols(formula="goal ~ dist + dist2 + dist3", data=dfs)
+dfs['dist3'] = dfs['dist_m'] ** 3
+model = smf.ols(formula="goal ~ dist_m + dist2 + dist3", data=dfs)
 results = model.fit()
 results.summary2()
 
 #############
 # natural log
 #############
-dfs['ln_dist'] = np.log(dfs['dist'])
+dfs['ln_dist'] = np.log(dfs['dist_m'])
 
 model = smf.ols(formula='goal ~ ln_dist', data=dfs)
 results = model.fit()
@@ -86,7 +88,7 @@ dfs['is_header'] = dfs['foot'] == 'head/body'
 
 model = smf.ols(formula=
         """
-        goal ~ dist + dist:is_header
+        goal ~ dist_m + dist_m:is_header
         """, data=dfs)
 results = model.fit()
 results.summary2()
@@ -96,7 +98,7 @@ results.summary2()
 #######
 model = smf.logit(formula=
         """
-        goal ~ dist + dist:is_header
+        goal ~ dist_m + dist_m:is_header
         """, data=dfs)
 logit_results = model.fit()
 logit_results.summary2()
