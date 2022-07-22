@@ -12,20 +12,20 @@ table_html = """
      <th>Goals</th>
     </tr>
     <tr>
-     <th>Lionel Messi</th>
-     <th>2018-06-16</th>
-     <th>Argentina</th>
-     <th>Iceland</th>
-     <th>7</th>
-     <th>0</th>
+     <td>Lionel Messi</td>
+     <td>2018-06-16</td>
+     <td>Argentina</td>
+     <td>Iceland</td>
+     <td>7</td>
+     <td>0</td>
     </tr>
     <tr>
-     <th>Luka Modric</th>
-     <th>2018-06-21</th>
-     <th>Croatia</th>
-     <th>Argentina</th>
-     <th>2</th>
-     <th>1</th>
+     <td>Luka Modric</td>
+     <td>2018-06-21</td>
+     <td>Croatia</td>
+     <td>Argentina</td>
+     <td>2</td>
+     <td>1</td>
     </tr>
   </table>
 <html>

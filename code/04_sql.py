@@ -15,13 +15,13 @@ DATA_DIR = './data'
 conn = sqlite3.connect(path.join(DATA_DIR, 'soccer-data.sqlite'))
 
 # load csv data
-player_game = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
+player_match = pd.read_csv(path.join(DATA_DIR, 'player_match.csv'))
 player = pd.read_csv(path.join(DATA_DIR, 'players.csv'))
 game = pd.read_csv(path.join(DATA_DIR, 'matches.csv'))
 team = pd.read_csv(path.join(DATA_DIR, 'teams.csv'))
 
 # and write it to sql
-player_game.to_sql('player_game', conn, index=False, if_exists='replace')
+player_match.to_sql('player_match', conn, index=False, if_exists='replace')
 player.to_sql('player', conn, index=False, if_exists='replace')
 game.to_sql('game', conn, index=False, if_exists='replace')
 team.to_sql('team', conn, index=False, if_exists='replace')
@@ -164,11 +164,11 @@ df = pd.read_sql(
         team.team,
         team.city,
         team.grouping,
-        player_game.*
-    FROM player, team, player_game
+        player_match.*
+    FROM player, team, player_match
     WHERE
         player.team = team.team AND
-        player_game.player_id = player.player_id
+        player_match.player_id = player.player_id
     """, conn)
 df.head()
 
@@ -181,12 +181,12 @@ df = pd.read_sql(
         t.team,
         t.city,
         t.grouping,
-        pg.match_id,
-        pg.pass
-    FROM player AS p, team AS t, player_game AS pg
+        pm.match_id,
+        pm.pass
+    FROM player AS p, team AS t, player_match AS pm
     WHERE
         p.team = t.team AND
-        pg.player_id = p.player_id
+        pm.player_id = p.player_id
     """, conn)
 df.head()
 
@@ -199,12 +199,12 @@ df = pd.read_sql(
         t.team,
         t.city,
         t.grouping,
-        pg.match_id,
-        pg.pass
-    FROM player AS p, team AS t, player_game AS pg
+        pm.match_id,
+        pm.pass
+    FROM player AS p, team AS t, player_match AS pm
     WHERE
         p.team = t.team AND
-        pg.player_id = p.player_id AND
+        pm.player_id = p.player_id AND
         p.pos == 'FWD'
     """, conn)
 df.head()
@@ -246,7 +246,7 @@ df = pd.read_sql(
         SELECT match_id, label, home as team, away as opp, player_id, player_name
         FROM game, player
         WHERE game.away = player.team_id) AS a
-    LEFT JOIN player_game AS b ON a.match_id = b.match_id AND a.player_id = b.player_id
+    LEFT JOIN player_match AS b ON a.match_id = b.match_id AND a.player_id = b.player_id
     """, conn)
 
 

@@ -16,6 +16,11 @@ pd.options.mode.chained_assignment = None
 DATA_DIR = './data'
 FIG_DIR = './figures'
 
+dftm = dfpm.groupby(['match_id', 'team']).agg(
+    total_shot=('shot', 'sum'),
+    total_pass=('pass', 'sum'),
+    total_goal=('goal', 'sum'))
+
 ###############
 # distributions
 ###############

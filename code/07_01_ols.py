@@ -33,3 +33,6 @@ prob_of_goal(25)
 df['goal_hat'] = results.predict(df)
 df[['goal', 'goal_hat']].head(5)
 
+model = smf.ols(formula='goal ~ dist_m + dist_m_sq + C(period)', data=df)
+results = model.fit()
+results.summary2()
