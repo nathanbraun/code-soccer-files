@@ -1,0 +1,490 @@
+player_id,match_id,name,team,pos,shot,goal,assist,cross,throw,corner
+4513,2057954,D. Cheryshev,Russia,MID,3,2,0,4,0,0
+101699,2057954,A. Samedov,Russia,MID,2,0,0,1,1,0
+101857,2057954,Y. Zhirkov,Russia,MID,1,0,0,1,10,4
+102157,2057954,Y. Gazinskiy,Russia,MID,1,1,0,0,0,0
+103682,2057954,R. Zobnin,Russia,MID,2,0,0,1,0,0
+122577,2057954,Taisir Al Jassim,Saudi Arabia,MID,0,0,0,0,1,0
+122615,2057954,Hattan Bahbir,Saudi Arabia,MID,1,0,0,1,1,0
+122832,2057954,Salem Al Dawsari,Saudi Arabia,MID,2,0,0,0,0,0
+122847,2057954,Salman Al Faraj,Saudi Arabia,MID,0,0,0,0,2,2
+220971,2057954,D. Kuzyaev,Russia,MID,1,0,0,0,0,0
+257800,2057954,A. Golovin,Russia,MID,0,1,2,3,1,2
+70095,2057955,C. Rodríguez,Uruguay,MID,0,0,0,2,0,0
+86340,2057955,C. Sánchez,Uruguay,MID,1,0,1,3,1,3
+116349,2057955,M. Vecino,Uruguay,MID,1,0,0,0,0,0
+119932,2057955,Mahmoud Kahraba,Egypt,MID,0,0,0,2,0,0
+120339,2057955,Mohamed Elneny,Egypt,MID,2,0,0,0,0,0
+213364,2057955,G. De Arrascaeta,Uruguay,MID,0,0,0,2,0,2
+220112,2057955,Trézéguet,Egypt,MID,2,0,0,1,1,0
+299618,2057955,N. Nández,Uruguay,MID,0,0,0,3,0,0
+388928,2057955,Amr Warda,Egypt,MID,0,0,0,3,0,0
+437417,2057955,Tarek Hamed,Egypt,MID,1,0,0,0,0,0
+4513,2057956,D. Cheryshev,Russia,MID,4,1,0,4,3,1
+101699,2057956,A. Samedov,Russia,MID,0,0,0,4,0,6
+101857,2057956,Y. Zhirkov,Russia,MID,0,0,0,4,7,0
+102157,2057956,Y. Gazinskiy,Russia,MID,1,0,0,2,0,0
+103682,2057956,R. Zobnin,Russia,MID,2,0,0,2,0,0
+120167,2057956,Abdallah Said,Egypt,MID,1,0,0,1,0,4
+220112,2057956,Trézéguet,Egypt,MID,3,0,0,2,0,0
+257800,2057956,A. Golovin,Russia,MID,1,0,0,5,0,0
+388928,2057956,Amr Warda,Egypt,MID,1,0,0,4,1,0
+70095,2057957,C. Rodríguez,Uruguay,MID,0,0,0,2,0,0
+86340,2057957,C. Sánchez,Uruguay,MID,2,0,1,2,0,1
+116269,2057957,D. Laxalt,Uruguay,MID,0,0,0,0,2,0
+122577,2057957,Taisir Al Jassim,Saudi Arabia,MID,0,0,0,0,1,1
+122615,2057957,Hattan Bahbir,Saudi Arabia,MID,2,0,0,1,0,1
+122832,2057957,Salem Al Dawsari,Saudi Arabia,MID,1,0,0,1,0,0
+122847,2057957,Salman Al Faraj,Saudi Arabia,MID,0,0,0,3,1,2
+284147,2057957,Mohammed Kanno,Saudi Arabia,MID,1,0,0,0,0,0
+333571,2057957,L. Torreira,Uruguay,MID,1,0,0,0,0,1
+4513,2057958,D. Cheryshev,Russia,MID,1,0,0,3,1,1
+70095,2057958,C. Rodríguez,Uruguay,MID,2,0,0,1,0,0
+101699,2057958,A. Samedov,Russia,MID,0,0,0,1,0,1
+103682,2057958,R. Zobnin,Russia,MID,1,0,0,2,0,0
+116269,2057958,D. Laxalt,Uruguay,MID,1,0,0,3,10,0
+116349,2057958,M. Vecino,Uruguay,MID,1,0,0,0,0,0
+213364,2057958,G. De Arrascaeta,Uruguay,MID,0,0,0,2,0,3
+333571,2057958,L. Torreira,Uruguay,MID,1,0,0,0,0,1
+361807,2057958,R. Bentancur,Uruguay,MID,2,0,0,0,0,0
+120167,2057959,Abdallah Said,Egypt,MID,0,0,1,1,0,0
+120339,2057959,Mohamed Elneny,Egypt,MID,1,0,0,0,0,0
+122615,2057959,Hattan Bahbir,Saudi Arabia,MID,3,0,0,2,0,1
+122832,2057959,Salem Al Dawsari,Saudi Arabia,MID,4,1,0,0,0,1
+122847,2057959,Salman Al Faraj,Saudi Arabia,MID,1,1,0,5,4,5
+122918,2057959,Hussain Al Mogahwi,Saudi Arabia,MID,5,0,0,3,0,0
+139393,2057959,Abdullah Otayf,Saudi Arabia,MID,2,0,1,0,0,0
+220112,2057959,Trézéguet,Egypt,MID,3,0,0,1,0,0
+388928,2057959,Amr Warda,Egypt,MID,1,0,0,2,0,2
+3346,2057960,Sergio Busquets,Spain,MID,1,0,1,0,0,0
+3353,2057960,Iniesta,Spain,MID,1,0,0,0,0,0
+3443,2057960,Koke,Spain,MID,0,0,0,1,0,1
+3563,2057960,Isco,Spain,MID,2,0,0,5,2,3
+8317,2057960,David Silva,Spain,MID,2,0,0,0,0,1
+70093,2057960,João Moutinho,Portugal,MID,0,0,0,1,1,1
+70965,2057960,João Mário,Portugal,MID,0,0,0,1,0,0
+243588,2057960,Bruno Fernandes,Portugal,MID,1,0,0,1,0,0
+142,2057961,K. El Ahmadi,Morocco,MID,0,0,0,2,0,0
+3509,2057961,M. Shojaei,Iran,MID,0,0,0,1,0,0
+25998,2057961,Y. Belhanda,Morocco,MID,3,0,0,0,2,1
+26226,2057961,R. Saïss,Morocco,MID,1,0,0,0,0,0
+101846,2057961,M. Boussoufa,Morocco,MID,0,0,0,2,1,2
+221039,2057961,H. Ziyech,Morocco,MID,2,0,0,1,3,2
+237836,2057961,V. Amiri,Iran,MID,0,0,0,1,3,0
+285590,2057961,S. Amrabat,Morocco,MID,0,0,0,1,1,0
+372915,2057961,A. Harit,Morocco,MID,3,0,0,1,0,0
+142,2057962,K. El Ahmadi,Morocco,MID,1,0,0,0,1,0
+25888,2057962,F. Fajr,Morocco,MID,0,0,0,1,0,0
+25998,2057962,Y. Belhanda,Morocco,MID,3,0,0,1,0,1
+70093,2057962,João Moutinho,Portugal,MID,0,0,1,1,0,2
+101846,2057962,M. Boussoufa,Morocco,MID,1,0,0,4,0,1
+101847,2057962,M. Carcela-González,Morocco,MID,0,0,0,2,1,0
+149074,2057962,N. Dirar,Morocco,MID,1,0,0,4,14,0
+221039,2057962,H. Ziyech,Morocco,MID,3,0,0,3,3,5
+243588,2057962,Bruno Fernandes,Portugal,MID,2,0,0,2,0,1
+265673,2057962,Bernardo Silva,Portugal,MID,0,0,0,1,0,2
+3346,2057963,Sergio Busquets,Spain,MID,1,0,0,0,0,0
+3353,2057963,Iniesta,Spain,MID,0,0,0,3,1,0
+3563,2057963,Isco,Spain,MID,3,0,0,5,2,5
+8317,2057963,David Silva,Spain,MID,4,0,0,2,1,1
+78991,2057963,O. Ebrahimi,Iran,MID,0,0,0,2,0,0
+237836,2057963,V. Amiri,Iran,MID,1,0,0,5,1,0
+288091,2057963,Marco Asensio,Spain,MID,0,0,0,1,0,0
+70403,2057964,Adrien Silva,Portugal,MID,1,0,0,1,0,0
+70965,2057964,João Mário,Portugal,MID,1,0,0,1,0,0
+78991,2057964,O. Ebrahimi,Iran,MID,0,0,0,1,0,0
+237836,2057964,V. Amiri,Iran,MID,1,0,0,1,3,0
+241647,2057964,S. Ezatolahi,Iran,MID,1,0,0,0,0,0
+3345,2057965,Thiago Alcântara,Spain,MID,2,0,0,0,0,0
+3346,2057965,Sergio Busquets,Spain,MID,1,0,0,0,0,0
+3353,2057965,Iniesta,Spain,MID,2,0,1,3,0,0
+3563,2057965,Isco,Spain,MID,2,1,0,3,1,3
+8317,2057965,David Silva,Spain,MID,0,0,0,2,0,3
+25888,2057965,F. Fajr,Morocco,MID,0,0,1,0,0,1
+25998,2057965,Y. Belhanda,Morocco,MID,0,0,0,1,0,0
+149074,2057965,N. Dirar,Morocco,MID,0,0,0,2,4,0
+221039,2057965,H. Ziyech,Morocco,MID,2,0,0,0,3,0
+288091,2057965,Marco Asensio,Spain,MID,1,0,0,0,0,1
+54,2057967,C. Eriksen,Denmark,MID,2,0,1,4,0,7
+405,2057967,L. Schöne,Denmark,MID,1,0,0,0,0,0
+55990,2057967,T. Delaney,Denmark,MID,2,0,0,0,0,0
+70156,2057967,A. Carrillo,Peru,MID,1,0,0,6,0,0
+114723,2057967,Y. Yotún,Peru,MID,1,0,0,1,2,3
+114762,2057967,É. Flores,Peru,MID,2,0,0,0,0,0
+114813,2057967,C. Cueva,Peru,MID,0,0,0,3,0,0
+139075,2057967,R. Tapia,Peru,MID,1,0,0,0,0,0
+139078,2057967,P. Aquino,Peru,MID,0,0,0,1,0,0
+241945,2057967,P. Sisto,Denmark,MID,1,0,0,1,0,0
+7936,2057968,P. Pogba,France,MID,1,0,0,0,0,0
+25437,2057968,B. Matuidi,France,MID,1,0,0,4,0,0
+28115,2057968,N. Fekir,France,MID,0,0,0,1,1,0
+70156,2057968,A. Carrillo,Peru,MID,1,0,0,5,0,0
+114723,2057968,Y. Yotún,Peru,MID,1,0,0,1,0,0
+114762,2057968,É. Flores,Peru,MID,2,0,0,3,0,0
+114813,2057968,C. Cueva,Peru,MID,1,0,0,1,0,1
+139078,2057968,P. Aquino,Peru,MID,1,0,0,0,0,0
+54,2057970,C. Eriksen,Denmark,MID,2,0,0,0,0,4
+28115,2057970,N. Fekir,France,MID,2,0,0,1,0,0
+28922,2057970,T. Lemar,France,MID,1,0,0,0,0,1
+31528,2057970,N. Kanté,France,MID,0,0,0,1,0,0
+241945,2057970,P. Sisto,Denmark,MID,0,0,0,1,0,0
+93,2057972,J. Guðmunds­son,Iceland,MID,1,0,0,1,0,0
+3280,2057972,É. Banega,Argentina,MID,2,0,0,2,1,1
+3314,2057972,Á. di María,Argentina,MID,0,0,0,6,2,4
+3445,2057972,E. Salvio,Argentina,MID,1,0,0,4,6,0
+21314,2057972,E. Hallfreðsson,Iceland,MID,0,0,0,1,0,0
+37732,2057972,L. Biglia,Argentina,MID,2,0,0,0,0,0
+38084,2057972,B. Bjarnason,Iceland,MID,1,0,0,1,0,0
+77521,2057972,A. Gunnarsson,Iceland,MID,0,0,0,0,4,0
+77558,2057972,G. Sigurðsson,Iceland,MID,3,0,0,4,0,2
+146459,2057972,M. Meza,Argentina,MID,0,0,0,2,2,4
+3476,2057973,I. Rakitić,Croatia,MID,1,0,0,2,1,2
+7898,2057973,J. Obi Mikel,Nigeria,MID,0,0,0,2,0,0
+8287,2057973,L. Modrić,Croatia,MID,0,1,0,1,0,4
+8625,2057973,V. Moses,Nigeria,MID,3,0,0,4,0,5
+14812,2057973,I. Perišić,Croatia,MID,1,0,0,2,0,0
+69404,2057973,M. Kovačić,Croatia,MID,1,0,0,0,0,0
+230020,2057973,A. Iwobi,Nigeria,MID,3,0,0,2,0,0
+265366,2057973,W. Ndidi,Nigeria,MID,0,0,0,0,4,0
+3445,2057974,E. Salvio,Argentina,MID,0,0,0,2,5,0
+3476,2057974,I. Rakitić,Croatia,MID,3,1,0,0,0,0
+8287,2057974,L. Modrić,Croatia,MID,2,1,0,0,0,2
+14812,2057974,I. Perišić,Croatia,MID,1,0,0,5,1,0
+69404,2057974,M. Kovačić,Croatia,MID,1,0,1,1,0,0
+69968,2057974,M. Brozović,Croatia,MID,1,0,0,0,0,0
+86234,2057974,E. Pérez,Argentina,MID,1,0,0,0,0,0
+89073,2057974,M. Acuña,Argentina,MID,1,0,0,7,12,3
+146459,2057974,M. Meza,Argentina,MID,3,0,0,0,1,1
+7898,2057975,J. Obi Mikel,Nigeria,MID,0,0,0,3,0,0
+8625,2057975,V. Moses,Nigeria,MID,3,0,1,3,10,0
+38084,2057975,B. Bjarnason,Iceland,MID,2,0,0,1,0,0
+77521,2057975,A. Gunnarsson,Iceland,MID,0,0,0,1,4,0
+77558,2057975,G. Sigurðsson,Iceland,MID,1,0,0,2,0,5
+230020,2057975,A. Iwobi,Nigeria,MID,1,0,0,0,0,0
+265366,2057975,W. Ndidi,Nigeria,MID,2,0,0,2,1,0
+3280,2057976,É. Banega,Argentina,MID,0,0,1,2,0,2
+3314,2057976,Á. di María,Argentina,MID,1,0,0,1,1,0
+8625,2057976,V. Moses,Nigeria,MID,0,1,0,1,12,0
+146459,2057976,M. Meza,Argentina,MID,0,0,0,0,2,0
+265366,2057976,W. Ndidi,Nigeria,MID,1,0,0,0,1,0
+93,2057977,J. Guðmunds­son,Iceland,MID,2,0,0,1,0,4
+3476,2057977,I. Rakitić,Croatia,MID,1,0,0,0,0,1
+8287,2057977,L. Modrić,Croatia,MID,1,0,0,1,1,3
+14812,2057977,I. Perišić,Croatia,MID,2,1,0,2,2,0
+21314,2057977,E. Hallfreðsson,Iceland,MID,1,0,0,0,0,0
+38084,2057977,B. Bjarnason,Iceland,MID,4,0,0,2,0,0
+57480,2057977,A. Traustason,Iceland,MID,1,0,0,1,0,0
+69400,2057977,M. Badelj,Croatia,MID,2,1,1,1,0,0
+69404,2057977,M. Kovačić,Croatia,MID,1,0,0,0,0,1
+77521,2057977,A. Gunnarsson,Iceland,MID,2,0,0,1,7,0
+77558,2057977,G. Sigurðsson,Iceland,MID,1,1,0,3,1,6
+14785,2057978,Renato Augusto,Brazil,MID,1,0,0,2,0,0
+20938,2057978,V. Behrami,Switzerland,MID,0,0,0,0,1,0
+21169,2057978,B. Džemaili,Switzerland,MID,3,0,0,0,0,0
+40550,2057978,Paulinho,Brazil,MID,1,0,0,0,0,0
+40756,2057978,Casemiro,Brazil,MID,1,0,0,2,0,0
+49872,2057978,X. Shaqiri,Switzerland,MID,1,0,1,2,0,1
+49997,2057978,S. Zuber,Switzerland,MID,2,1,0,0,1,0
+105333,2057978,Willian,Brazil,MID,2,0,0,4,0,3
+105339,2057978,Fernandinho,Brazil,MID,2,0,0,0,0,0
+383,2057979,D. Tadić,Serbia,MID,0,0,0,4,0,0
+11155,2057979,B. Ruiz,Costa Rica,MID,1,0,0,0,1,0
+51004,2057979,C. Borges,Costa Rica,MID,1,0,0,1,0,0
+55988,2057979,C. Bolaños,Costa Rica,MID,0,0,0,2,0,2
+70122,2057979,N. Matić,Serbia,MID,1,0,0,0,0,0
+125260,2057979,D. Guzmán,Costa Rica,MID,0,0,0,2,0,3
+125452,2057979,J. Venegas,Costa Rica,MID,0,0,0,1,0,0
+127537,2057979,L. Milivojević,Serbia,MID,0,0,0,0,1,0
+127796,2057979,F. Kostić,Serbia,MID,1,0,0,1,0,0
+265865,2057979,S. Milinković-Savić,Serbia,MID,2,0,0,0,0,0
+11155,2057980,B. Ruiz,Costa Rica,MID,0,0,0,2,0,0
+40550,2057980,Paulinho,Brazil,MID,0,0,0,2,0,0
+40756,2057980,Casemiro,Brazil,MID,2,0,0,1,0,0
+51004,2057980,C. Borges,Costa Rica,MID,1,0,0,0,0,0
+55988,2057980,C. Bolaños,Costa Rica,MID,0,0,0,1,0,1
+105333,2057980,Willian,Brazil,MID,1,0,0,1,0,1
+105334,2057980,Douglas Costa,Brazil,MID,0,0,1,4,0,2
+125452,2057980,J. Venegas,Costa Rica,MID,0,0,0,1,0,0
+383,2057981,D. Tadić,Serbia,MID,2,0,1,4,0,2
+21169,2057981,B. Džemaili,Switzerland,MID,2,0,0,0,0,0
+49872,2057981,X. Shaqiri,Switzerland,MID,7,1,0,2,0,2
+49876,2057981,G. Xhaka,Switzerland,MID,2,1,0,0,0,0
+70122,2057981,N. Matić,Serbia,MID,1,0,0,1,0,0
+127537,2057981,L. Milivojević,Serbia,MID,0,0,0,1,0,0
+127796,2057981,F. Kostić,Serbia,MID,0,0,0,4,0,0
+237274,2057981,N. Radonjić,Serbia,MID,0,0,0,1,0,0
+265865,2057981,S. Milinković-Savić,Serbia,MID,1,0,0,1,0,0
+383,2057982,D. Tadić,Serbia,MID,1,0,0,4,0,0
+40550,2057982,Paulinho,Brazil,MID,1,1,0,2,0,0
+40756,2057982,Casemiro,Brazil,MID,1,0,0,0,0,0
+70122,2057982,N. Matić,Serbia,MID,1,0,0,0,1,0
+105333,2057982,Willian,Brazil,MID,0,0,0,3,1,3
+105339,2057982,Fernandinho,Brazil,MID,0,0,0,2,0,0
+127796,2057982,F. Kostić,Serbia,MID,1,0,0,4,0,0
+140085,2057982,A. Živković,Serbia,MID,1,0,0,3,0,0
+237274,2057982,N. Radonjić,Serbia,MID,0,0,0,1,0,0
+265865,2057982,S. Milinković-Savić,Serbia,MID,2,0,0,0,0,0
+11155,2057983,B. Ruiz,Costa Rica,MID,0,0,0,0,1,0
+20938,2057983,V. Behrami,Switzerland,MID,1,0,0,0,0,0
+21169,2057983,B. Džemaili,Switzerland,MID,2,1,0,1,0,0
+49872,2057983,X. Shaqiri,Switzerland,MID,0,0,0,0,0,3
+49876,2057983,G. Xhaka,Switzerland,MID,0,0,0,0,2,0
+51004,2057983,C. Borges,Costa Rica,MID,3,0,0,2,0,0
+125260,2057983,D. Guzmán,Costa Rica,MID,1,0,0,1,0,2
+360992,2057983,D. Zakaria,Switzerland,MID,0,0,1,1,0,0
+3318,2057984,S. Khedira,Germany,MID,1,0,0,2,0,0
+3319,2057984,M. Özil,Germany,MID,1,0,0,2,1,0
+3384,2057984,A. Guardado,Mexico,MID,1,0,0,1,0,0
+14723,2057984,T. Kroos,Germany,MID,5,0,0,0,0,5
+14862,2057984,J. Draxler,Germany,MID,5,0,0,1,0,1
+112459,2057984,H. Herrera,Mexico,MID,1,0,0,0,0,0
+146583,2057984,J. Brandt,Germany,MID,1,0,0,1,0,0
+336178,2057984,J. Gallardo,Mexico,MID,0,0,0,2,12,0
+8529,2057985,S. Larsson,Sweden,MID,1,0,0,3,1,6
+15781,2057985,Ja-Cheol Koo,Korea Republic,MID,1,0,0,0,0,0
+51132,2057985,E. Forsberg,Sweden,MID,4,0,0,0,0,0
+51144,2057985,V. Claesson,Sweden,MID,2,0,0,1,4,0
+95299,2057985,Min-Woo Kim,Korea Republic,MID,1,0,0,3,6,0
+95490,2057985,Woo-Young Jung,Korea Republic,MID,0,0,0,1,0,0
+299121,2057985,Jae-Sung Lee,Korea Republic,MID,1,0,0,1,0,4
+8529,2057986,S. Larsson,Sweden,MID,0,0,0,0,0,1
+14723,2057986,T. Kroos,Germany,MID,3,1,0,3,1,5
+14808,2057986,İ. Gündoğan,Germany,MID,1,0,0,1,1,0
+14862,2057986,J. Draxler,Germany,MID,1,0,0,1,0,0
+15811,2057986,S. Rudy,Germany,MID,1,0,0,0,0,0
+50812,2057986,J. Durmaz,Sweden,MID,0,0,0,1,0,0
+51132,2057986,E. Forsberg,Sweden,MID,1,0,0,0,1,0
+51144,2057986,V. Claesson,Sweden,MID,0,0,1,1,2,0
+146583,2057986,J. Brandt,Germany,MID,1,0,0,1,1,0
+3384,2057987,A. Guardado,Mexico,MID,2,0,0,1,2,2
+51625,2057987,Seon-Min Moon,Korea Republic,MID,2,0,0,2,0,0
+61962,2057987,Sung-Yeung Ki,Korea Republic,MID,3,0,0,0,0,0
+95299,2057987,Min-Woo Kim,Korea Republic,MID,0,0,0,2,9,0
+112459,2057987,H. Herrera,Mexico,MID,1,0,0,0,0,0
+299121,2057987,Jae-Sung Lee,Korea Republic,MID,3,0,0,2,0,1
+336178,2057987,J. Gallardo,Mexico,MID,0,0,0,1,7,0
+3318,2057988,S. Khedira,Germany,MID,2,0,0,1,0,0
+3319,2057988,M. Özil,Germany,MID,1,0,0,4,0,1
+14723,2057988,T. Kroos,Germany,MID,5,0,0,1,3,7
+15781,2057988,Ja-Cheol Koo,Korea Republic,MID,0,0,0,1,0,0
+95490,2057988,Woo-Young Jung,Korea Republic,MID,2,0,0,0,0,0
+134387,2057988,L. Goretzka,Germany,MID,1,0,0,2,1,0
+146583,2057988,J. Brandt,Germany,MID,2,0,0,1,2,0
+209567,2057988,Se-Jong Ju,Korea Republic,MID,0,0,1,0,0,0
+299121,2057988,Jae-Sung Lee,Korea Republic,MID,1,0,0,0,0,0
+3384,2057989,A. Guardado,Mexico,MID,2,0,0,0,0,0
+8529,2057989,S. Larsson,Sweden,MID,0,0,0,2,0,0
+51132,2057989,E. Forsberg,Sweden,MID,5,0,0,0,0,0
+51144,2057989,V. Claesson,Sweden,MID,1,0,0,0,1,0
+112253,2057989,M. Fabián,Mexico,MID,1,0,0,2,0,0
+112459,2057989,H. Herrera,Mexico,MID,1,0,0,5,1,1
+336178,2057989,J. Gallardo,Mexico,MID,0,0,0,3,8,0
+261,2057990,N. Chadli,Belgium,MID,0,0,0,0,1,0
+38021,2057990,K. De Bruyne,Belgium,MID,1,0,1,3,1,3
+86411,2057990,A. Cooper,Panama,MID,1,0,0,0,0,0
+241077,2057990,Y. Bárcenas,Panama,MID,1,0,0,3,0,3
+401861,2057990,J. Rodriguez,Panama,MID,0,0,0,2,0,0
+7934,2057991,J. Lingard,England,MID,4,0,0,0,0,0
+7964,2057991,J. Henderson,England,MID,1,0,0,2,0,0
+13484,2057991,D. Alli,England,MID,1,0,0,2,0,0
+25776,2057991,W. Khazri,Tunisia,MID,1,0,0,0,0,2
+26100,2057991,N. Sliti,Tunisia,MID,2,0,0,0,0,0
+120853,2057991,F. Sassi,Tunisia,MID,1,1,0,0,0,0
+235555,2057991,R. Loftus-Cheek,England,MID,0,0,0,1,0,0
+25776,2057992,W. Khazri,Tunisia,MID,3,1,1,3,3,2
+26100,2057992,N. Sliti,Tunisia,MID,1,0,0,1,1,0
+38021,2057992,K. De Bruyne,Belgium,MID,0,0,0,3,1,3
+70123,2057992,A. Witsel,Belgium,MID,3,0,0,0,1,0
+120853,2057992,F. Sassi,Tunisia,MID,2,0,0,0,0,0
+263802,2057992,Y. Tielemans,Belgium,MID,0,0,1,0,0,1
+275243,2057992,S. Khaoui,Tunisia,MID,1,0,0,2,0,0
+7934,2057993,J. Lingard,England,MID,2,1,0,0,0,0
+7964,2057993,J. Henderson,England,MID,1,0,0,0,0,0
+8464,2057993,F. Delph,England,MID,0,0,0,1,0,0
+86414,2057993,A. Godoy,Panama,MID,1,0,0,0,0,0
+235555,2057993,R. Loftus-Cheek,England,MID,1,0,1,0,1,0
+241077,2057993,Y. Bárcenas,Panama,MID,2,0,0,3,0,0
+401861,2057993,J. Rodriguez,Panama,MID,1,0,0,3,0,1
+261,2057994,N. Chadli,Belgium,MID,0,0,0,1,2,0
+8249,2057994,M. Fellaini,Belgium,MID,2,0,0,1,0,0
+8464,2057994,F. Delph,England,MID,2,0,0,1,0,0
+235555,2057994,R. Loftus-Cheek,England,MID,1,0,0,3,0,0
+261127,2057994,A. Januzaj,Belgium,MID,4,1,0,1,0,0
+263802,2057994,Y. Tielemans,Belgium,MID,2,0,1,1,0,0
+25776,2057995,W. Khazri,Tunisia,MID,5,1,1,4,0,3
+26100,2057995,N. Sliti,Tunisia,MID,3,0,0,3,0,0
+59083,2057995,G. Gómez,Panama,MID,1,0,0,0,0,0
+86414,2057995,A. Godoy,Panama,MID,1,0,0,0,0,0
+120853,2057995,F. Sassi,Tunisia,MID,1,0,0,0,1,0
+241077,2057995,Y. Bárcenas,Panama,MID,1,0,0,1,0,0
+354043,2057995,G. Chaalali,Tunisia,MID,1,0,0,2,0,2
+401861,2057995,J. Rodriguez,Panama,MID,2,0,0,1,0,0
+25706,2057996,I. Gueye,Senegal,MID,2,0,0,0,1,0
+33032,2057996,K. Grosicki,Poland,MID,2,0,1,1,1,1
+99902,2057996,P. Zieliński,Poland,MID,0,0,0,2,1,1
+448079,2057996,I. Sarr,Senegal,MID,0,0,0,4,0,0
+14816,2057997,S. Kagawa,Japan,MID,1,1,0,0,0,0
+14836,2057997,T. Inui,Japan,MID,3,0,0,1,1,1
+20751,2057997,J. Cuadrado,Colombia,MID,1,0,0,0,0,0
+70096,2057997,J. Rodríguez,Colombia,MID,1,0,0,0,3,2
+91019,2057997,J. Quintero,Colombia,MID,1,1,0,0,1,1
+94650,2057997,G. Haraguchi,Japan,MID,0,0,0,0,1,0
+94828,2057997,G. Shibasaki,Japan,MID,0,0,0,2,0,4
+101592,2057997,K. Honda,Japan,MID,1,0,1,0,0,1
+20751,2057998,J. Cuadrado,Colombia,MID,3,1,0,8,0,0
+33032,2057998,K. Grosicki,Poland,MID,0,0,0,0,0,2
+70096,2057998,J. Rodríguez,Colombia,MID,1,0,2,2,0,2
+91019,2057998,J. Quintero,Colombia,MID,2,0,1,2,1,3
+91502,2057998,A. Uribe,Colombia,MID,1,0,0,0,0,0
+99902,2057998,P. Zieliński,Poland,MID,2,0,0,1,2,3
+255738,2057998,J. Lerma,Colombia,MID,1,0,0,0,0,0
+14836,2057999,T. Inui,Japan,MID,2,1,1,1,0,1
+14929,2057999,M. Hasebe,Japan,MID,1,0,0,0,0,0
+25706,2057999,I. Gueye,Senegal,MID,0,0,0,1,0,0
+27412,2057999,C. N'Doye,Senegal,MID,1,0,0,0,0,0
+94650,2057999,G. Haraguchi,Japan,MID,1,0,0,1,0,0
+94828,2057999,G. Shibasaki,Japan,MID,0,0,0,3,1,0
+101592,2057999,K. Honda,Japan,MID,1,1,0,0,0,1
+207164,2057999,B. N'Diaye,Senegal,MID,1,0,0,1,0,1
+448079,2057999,I. Sarr,Senegal,MID,1,0,0,4,1,0
+14836,2058000,T. Inui,Japan,MID,0,0,0,1,0,0
+33032,2058000,K. Grosicki,Poland,MID,2,0,0,7,0,4
+94828,2058000,G. Shibasaki,Japan,MID,0,0,0,1,0,4
+99902,2058000,P. Zieliński,Poland,MID,1,0,0,0,0,0
+100140,2058000,J. Góralski,Poland,MID,1,0,0,0,0,0
+225324,2058000,R. Kurzawa,Poland,MID,2,0,1,1,0,3
+20751,2058001,J. Cuadrado,Colombia,MID,0,0,0,2,4,0
+70096,2058001,J. Rodríguez,Colombia,MID,0,0,0,0,0,1
+91019,2058001,J. Quintero,Colombia,MID,0,0,1,0,1,2
+448079,2058001,I. Sarr,Senegal,MID,2,0,0,3,0,0
+32599,2058002,Manuel Fernandes,Portugal,MID,2,0,0,1,0,1
+37762,2058002,William Carvalho,Portugal,MID,1,0,0,0,0,0
+70095,2058002,C. Rodríguez,Uruguay,MID,0,0,0,1,0,0
+70403,2058002,Adrien Silva,Portugal,MID,1,0,0,1,0,0
+70965,2058002,João Mário,Portugal,MID,0,0,0,5,2,3
+116269,2058002,D. Laxalt,Uruguay,MID,0,0,0,1,5,0
+116349,2058002,M. Vecino,Uruguay,MID,0,0,0,1,0,0
+265673,2058002,Bernardo Silva,Portugal,MID,2,0,0,6,2,2
+299618,2058002,N. Nández,Uruguay,MID,1,0,0,2,0,0
+333571,2058002,L. Torreira,Uruguay,MID,0,0,0,0,0,2
+361807,2058002,R. Bentancur,Uruguay,MID,0,0,1,1,0,0
+3280,2058003,É. Banega,Argentina,MID,1,0,0,0,0,1
+3314,2058003,Á. di María,Argentina,MID,2,1,0,7,3,2
+25437,2058003,B. Matuidi,France,MID,1,0,0,0,1,0
+86234,2058003,E. Pérez,Argentina,MID,0,0,0,0,1,0
+146459,2058003,M. Meza,Argentina,MID,0,0,0,2,1,0
+3346,2058004,Sergio Busquets,Spain,MID,1,0,0,0,0,0
+3353,2058004,Iniesta,Spain,MID,2,1,0,0,0,0
+3443,2058004,Koke,Spain,MID,1,0,0,2,0,1
+3563,2058004,Isco,Spain,MID,1,0,0,6,4,3
+4513,2058004,D. Cheryshev,Russia,MID,0,1,0,1,0,0
+8317,2058004,David Silva,Spain,MID,1,0,0,0,0,0
+101699,2058004,A. Samedov,Russia,MID,0,0,0,1,0,3
+101857,2058004,Y. Zhirkov,Russia,MID,1,0,0,0,1,1
+103682,2058004,R. Zobnin,Russia,MID,1,0,0,2,0,0
+257800,2058004,A. Golovin,Russia,MID,1,1,0,1,0,1
+288091,2058004,Marco Asensio,Spain,MID,1,0,0,2,0,2
+54,2058005,C. Eriksen,Denmark,MID,4,0,0,4,0,3
+405,2058005,L. Schöne,Denmark,MID,3,0,0,1,0,0
+3476,2058005,I. Rakitić,Croatia,MID,4,1,0,0,0,0
+8287,2058005,L. Modrić,Croatia,MID,2,1,0,3,0,5
+14812,2058005,I. Perišić,Croatia,MID,5,0,0,5,4,0
+55990,2058005,T. Delaney,Denmark,MID,1,0,1,1,0,0
+56025,2058005,M. Krohn-Dehli,Denmark,MID,0,1,0,0,0,0
+69404,2058005,M. Kovačić,Croatia,MID,1,0,0,0,0,0
+241945,2058005,P. Sisto,Denmark,MID,1,0,0,0,0,0
+3349,2058006,J. dos Santos,Mexico,MID,0,0,0,0,0,1
+3384,2058006,A. Guardado,Mexico,MID,2,0,0,1,1,3
+40550,2058006,Paulinho,Brazil,MID,1,0,0,1,1,0
+40756,2058006,Casemiro,Brazil,MID,0,0,0,1,0,0
+105333,2058006,Willian,Brazil,MID,2,0,1,4,1,4
+112459,2058006,H. Herrera,Mexico,MID,1,0,0,2,1,0
+336178,2058006,J. Gallardo,Mexico,MID,1,0,0,1,8,0
+261,2058007,N. Chadli,Belgium,MID,2,1,0,2,3,0
+8249,2058007,M. Fellaini,Belgium,MID,1,1,0,1,1,0
+14816,2058007,S. Kagawa,Japan,MID,1,0,0,1,0,0
+14836,2058007,T. Inui,Japan,MID,3,1,0,3,0,2
+38021,2058007,K. De Bruyne,Belgium,MID,2,0,0,2,2,8
+70123,2058007,A. Witsel,Belgium,MID,2,0,0,0,3,0
+94650,2058007,G. Haraguchi,Japan,MID,2,1,0,1,0,0
+94828,2058007,G. Shibasaki,Japan,MID,0,0,1,1,0,2
+101592,2058007,K. Honda,Japan,MID,1,0,0,0,0,2
+20876,2058008,A. Ekdal,Sweden,MID,3,0,0,1,0,0
+21169,2058008,B. Džemaili,Switzerland,MID,1,0,0,0,0,0
+49872,2058008,X. Shaqiri,Switzerland,MID,4,0,0,8,0,4
+49876,2058008,G. Xhaka,Switzerland,MID,2,0,0,2,0,0
+49997,2058008,S. Zuber,Switzerland,MID,2,0,0,2,0,0
+51132,2058008,E. Forsberg,Sweden,MID,1,1,0,1,0,2
+51144,2058008,V. Claesson,Sweden,MID,0,0,0,0,3,0
+7934,2058009,J. Lingard,England,MID,2,0,0,1,0,0
+7964,2058009,J. Henderson,England,MID,0,0,0,1,0,0
+13484,2058009,D. Alli,England,MID,1,0,0,0,1,0
+20751,2058009,J. Cuadrado,Colombia,MID,2,1,1,6,2,2
+91019,2058009,J. Quintero,Colombia,MID,3,0,0,2,0,0
+91502,2058009,A. Uribe,Colombia,MID,1,0,0,0,0,0
+210044,2058009,E. Dier,England,MID,1,1,0,0,0,0
+7936,2058010,P. Pogba,France,MID,1,0,0,2,0,0
+31528,2058010,N. Kanté,France,MID,1,0,0,0,0,0
+70095,2058010,C. Rodríguez,Uruguay,MID,2,0,0,1,0,0
+70379,2058010,J. Urretavizcaya,Uruguay,MID,0,0,0,3,2,0
+116269,2058010,D. Laxalt,Uruguay,MID,0,0,0,5,8,0
+116349,2058010,M. Vecino,Uruguay,MID,1,0,0,1,1,0
+209091,2058010,C. Tolisso,France,MID,1,0,1,1,0,0
+299618,2058010,N. Nández,Uruguay,MID,1,0,0,4,0,0
+333571,2058010,L. Torreira,Uruguay,MID,0,0,0,2,0,4
+361807,2058010,R. Bentancur,Uruguay,MID,1,0,0,1,0,0
+261,2058011,N. Chadli,Belgium,MID,1,0,0,1,5,2
+8249,2058011,M. Fellaini,Belgium,MID,1,0,0,0,0,0
+14785,2058011,Renato Augusto,Brazil,MID,2,1,0,0,0,0
+38021,2058011,K. De Bruyne,Belgium,MID,2,1,0,2,0,2
+40550,2058011,Paulinho,Brazil,MID,2,0,0,0,0,0
+105333,2058011,Willian,Brazil,MID,0,0,0,3,0,2
+105334,2058011,Douglas Costa,Brazil,MID,4,0,0,1,0,0
+105339,2058011,Fernandinho,Brazil,MID,1,0,0,1,0,0
+3476,2058012,I. Rakitić,Croatia,MID,0,1,0,0,1,0
+4513,2058012,D. Cheryshev,Russia,MID,2,1,0,1,1,0
+8287,2058012,L. Modrić,Croatia,MID,3,1,1,3,0,8
+14812,2058012,I. Perišić,Croatia,MID,3,0,0,1,0,0
+69968,2058012,M. Brozović,Croatia,MID,0,1,0,0,1,0
+101590,2058012,A. Dzagoev,Russia,MID,0,1,1,0,0,3
+101699,2058012,A. Samedov,Russia,MID,0,0,0,1,0,0
+101953,2058012,A. Erokhin,Russia,MID,2,0,0,1,0,0
+103682,2058012,R. Zobnin,Russia,MID,1,0,0,1,0,0
+220971,2058012,D. Kuzyaev,Russia,MID,1,1,0,1,0,0
+257800,2058012,A. Golovin,Russia,MID,0,0,0,1,0,3
+7934,2058013,J. Lingard,England,MID,3,0,1,2,0,0
+7964,2058013,J. Henderson,England,MID,1,0,0,2,0,0
+8464,2058013,F. Delph,England,MID,0,0,0,1,0,0
+8529,2058013,S. Larsson,Sweden,MID,0,0,0,1,2,1
+13484,2058013,D. Alli,England,MID,2,1,0,2,0,0
+51132,2058013,E. Forsberg,Sweden,MID,1,0,0,2,0,0
+51144,2058013,V. Claesson,Sweden,MID,3,0,0,2,2,0
+261,2058014,N. Chadli,Belgium,MID,0,0,0,8,7,5
+7936,2058014,P. Pogba,France,MID,1,0,0,0,0,0
+8249,2058014,M. Fellaini,Belgium,MID,1,0,0,0,0,0
+25437,2058014,B. Matuidi,France,MID,3,0,0,0,0,0
+38021,2058014,K. De Bruyne,Belgium,MID,2,0,0,7,1,0
+70123,2058014,A. Witsel,Belgium,MID,1,0,0,1,2,0
+209091,2058014,C. Tolisso,France,MID,1,0,0,0,0,0
+3476,2058015,I. Rakitić,Croatia,MID,1,0,0,1,0,3
+7934,2058015,J. Lingard,England,MID,3,0,0,0,1,0
+7964,2058015,J. Henderson,England,MID,1,0,0,0,0,0
+8287,2058015,L. Modrić,Croatia,MID,0,0,0,1,0,5
+13484,2058015,D. Alli,England,MID,0,0,0,1,0,0
+14812,2058015,I. Perišić,Croatia,MID,7,1,1,9,2,0
+69968,2058015,M. Brozović,Croatia,MID,3,0,0,1,0,0
+210044,2058015,E. Dier,England,MID,1,0,0,0,0,0
+261,2058016,N. Chadli,Belgium,MID,0,0,1,2,1,0
+7934,2058016,J. Lingard,England,MID,1,0,0,3,0,0
+8464,2058016,F. Delph,England,MID,1,0,0,2,2,0
+38021,2058016,K. De Bruyne,Belgium,MID,2,0,1,2,0,1
+210044,2058016,E. Dier,England,MID,4,0,0,0,0,0
+235555,2058016,R. Loftus-Cheek,England,MID,1,0,0,1,0,0
+263802,2058016,Y. Tielemans,Belgium,MID,3,0,0,1,0,0
+3476,2058017,I. Rakitić,Croatia,MID,3,0,0,3,4,3
+7936,2058017,P. Pogba,France,MID,2,1,0,0,0,0
+8287,2058017,L. Modrić,Croatia,MID,0,0,0,1,1,3
+14812,2058017,I. Perišić,Croatia,MID,2,1,0,9,0,0
+25437,2058017,B. Matuidi,France,MID,0,0,0,1,0,0
+28115,2058017,N. Fekir,France,MID,1,0,0,0,0,0
+69968,2058017,M. Brozović,Croatia,MID,0,0,0,0,2,0

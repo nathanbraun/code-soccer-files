@@ -1,0 +1,385 @@
+player_id,match_id,name,team,pos,shot,goal,assist,cross,throw,corner
+41123,2057954,Mário Fernandes,Russia,DEF,0,0,0,1,16,0
+122940,2057954,Yasir Al Shahrani,Saudi Arabia,DEF,2,0,0,1,15,0
+292954,2057954,Mohammed Al Burayk,Saudi Arabia,DEF,0,0,0,2,11,0
+20460,2057955,M. Cáceres,Uruguay,DEF,1,0,0,3,7,0
+116166,2057955,G. Varela,Uruguay,DEF,0,0,0,2,9,0
+119975,2057955,Mohamed Abdel-Shafi,Egypt,DEF,0,0,0,1,12,0
+120156,2057955,Ahmed Fathy,Egypt,DEF,1,0,0,5,11,0
+227894,2057955,J. Giménez,Uruguay,DEF,1,1,0,0,0,0
+41123,2057956,Mário Fernandes,Russia,DEF,0,0,1,3,14,0
+101583,2057956,S. Ignashevich,Russia,DEF,2,0,0,0,0,0
+101647,2057956,F. Kudryashov,Russia,DEF,0,0,0,0,3,0
+103668,2057956,I. Kutepov,Russia,DEF,0,0,1,0,0,0
+119975,2057956,Mohamed Abdel-Shafi,Egypt,DEF,0,0,0,2,15,0
+120156,2057956,Ahmed Fathy,Egypt,DEF,0,0,0,7,11,0
+198120,2057956,Ali Gabr,Egypt,DEF,1,0,0,1,1,0
+20460,2057957,M. Cáceres,Uruguay,DEF,2,0,0,2,8,0
+116166,2057957,G. Varela,Uruguay,DEF,0,0,0,1,9,0
+122940,2057957,Yasir Al Shahrani,Saudi Arabia,DEF,2,0,0,2,11,0
+292954,2057957,Mohammed Al Burayk,Saudi Arabia,DEF,0,0,0,7,10,0
+3433,2057958,D. Godín,Uruguay,DEF,2,0,0,0,0,0
+20460,2057958,M. Cáceres,Uruguay,DEF,0,0,0,2,11,0
+41123,2057958,Mário Fernandes,Russia,DEF,0,0,0,1,6,0
+101647,2057958,F. Kudryashov,Russia,DEF,0,0,0,1,6,0
+101825,2057958,I. Smolnikov,Russia,DEF,0,0,0,0,1,0
+119951,2057959,Ahmed Hegazy,Egypt,DEF,0,0,0,1,0,0
+119975,2057959,Mohamed Abdel-Shafi,Egypt,DEF,0,0,0,2,5,0
+120156,2057959,Ahmed Fathy,Egypt,DEF,0,0,0,2,11,0
+122940,2057959,Yasir Al Shahrani,Saudi Arabia,DEF,1,0,0,7,4,0
+292954,2057959,Mohammed Al Burayk,Saudi Arabia,DEF,1,0,0,5,6,0
+3269,2057960,Jordi Alba,Spain,DEF,0,0,0,4,8,0
+3304,2057960,Nacho,Spain,DEF,1,1,0,2,11,0
+28907,2057960,Raphaël Guerreiro,Portugal,DEF,0,0,0,5,11,0
+70389,2057960,Cédric Soares,Portugal,DEF,0,0,0,2,4,0
+20579,2057961,M. Benatia,Morocco,DEF,1,0,0,0,1,0
+79098,2057961,R. Rezaeian,Iran,DEF,0,0,0,0,15,0
+79248,2057961,E. Hajsafi,Iran,DEF,1,0,0,2,10,0
+101620,2057961,M. da Costa,Morocco,DEF,1,0,0,0,0,0
+272829,2057961,R. Cheshmi,Iran,DEF,1,0,0,0,0,0
+396475,2057961,A. Hakimi,Morocco,DEF,1,0,0,2,6,0
+3305,2057962,Pepe,Portugal,DEF,0,0,0,1,0,0
+20579,2057962,M. Benatia,Morocco,DEF,4,0,0,0,0,0
+28907,2057962,Raphaël Guerreiro,Portugal,DEF,1,0,0,1,7,0
+70389,2057962,Cédric Soares,Portugal,DEF,0,0,0,1,6,0
+101620,2057962,M. da Costa,Morocco,DEF,1,0,0,0,0,0
+396475,2057962,A. Hakimi,Morocco,DEF,0,0,0,2,11,0
+3269,2057963,Jordi Alba,Spain,DEF,0,0,0,7,5,0
+3306,2057963,Sergio Ramos,Spain,DEF,1,0,0,0,2,0
+3341,2057963,Piqué,Spain,DEF,1,0,0,0,0,0
+4501,2057963,Daniel Carvajal,Spain,DEF,1,0,0,3,9,0
+79098,2057963,R. Rezaeian,Iran,DEF,0,0,0,3,6,0
+79248,2057963,E. Hajsafi,Iran,DEF,0,0,0,0,4,0
+333803,2057963,M. Mohammadi,Iran,DEF,0,0,0,0,4,0
+8126,2057964,José Fonte,Portugal,DEF,1,0,0,0,0,0
+28907,2057964,Raphaël Guerreiro,Portugal,DEF,1,0,0,4,8,0
+70389,2057964,Cédric Soares,Portugal,DEF,0,0,0,2,14,0
+79098,2057964,R. Rezaeian,Iran,DEF,0,0,0,4,7,0
+79248,2057964,E. Hajsafi,Iran,DEF,0,0,0,0,1,0
+3269,2057965,Jordi Alba,Spain,DEF,0,0,0,2,6,0
+3306,2057965,Sergio Ramos,Spain,DEF,1,0,0,0,0,0
+3341,2057965,Piqué,Spain,DEF,3,0,0,0,0,0
+4501,2057965,Daniel Carvajal,Spain,DEF,0,0,1,6,14,0
+396475,2057965,A. Hakimi,Morocco,DEF,0,0,0,1,3,0
+56026,2057967,J. Stryger Larsen,Denmark,DEF,1,0,0,0,4,0
+56394,2057967,H. Dalsgaard,Denmark,DEF,0,0,0,2,12,0
+114617,2057967,C. Ramos,Peru,DEF,1,0,0,0,0,0
+114709,2057967,L. Advíncula,Peru,DEF,2,0,0,0,7,0
+115146,2057967,M. Trauco,Peru,DEF,0,0,0,5,10,0
+3309,2057968,R. Varane,France,DEF,1,0,0,0,0,0
+114709,2057968,L. Advíncula,Peru,DEF,1,0,0,3,11,0
+115146,2057968,M. Trauco,Peru,DEF,0,0,0,1,17,2
+279545,2057968,L. Hernández,France,DEF,2,0,0,0,12,0
+340646,2057968,B. Pavard,France,DEF,0,0,0,0,12,0
+3309,2057970,R. Varane,France,DEF,1,0,0,0,0,0
+26136,2057970,B. Mendy,France,DEF,0,0,0,8,3,0
+26196,2057970,D. Sidibé,France,DEF,0,0,0,6,7,0
+56026,2057970,J. Stryger Larsen,Denmark,DEF,0,0,0,0,6,0
+56394,2057970,H. Dalsgaard,Denmark,DEF,0,0,0,1,12,0
+279545,2057970,L. Hernández,France,DEF,0,0,0,2,10,0
+3355,2057972,J. Mascherano,Argentina,DEF,1,0,0,0,0,0
+54451,2057972,B. Sævarsson,Iceland,DEF,0,0,0,0,1,0
+70086,2057972,N. Otamendi,Argentina,DEF,3,0,0,0,1,0
+86722,2057972,N. Tagliafico,Argentina,DEF,1,0,0,1,3,0
+135207,2057972,H. Magnússon,Iceland,DEF,1,0,0,2,7,0
+16443,2057973,L. Balogun,Nigeria,DEF,1,0,0,0,0,0
+69409,2057973,Š. Vrsaljko,Croatia,DEF,1,0,0,3,6,0
+105361,2057973,I. Strinić,Croatia,DEF,0,0,0,0,5,0
+209792,2057973,B. Idowu,Nigeria,DEF,0,0,0,2,3,0
+265368,2057973,A. Shehu,Nigeria,DEF,0,0,0,0,8,0
+69409,2057974,Š. Vrsaljko,Croatia,DEF,0,0,0,2,8,0
+70086,2057974,N. Otamendi,Argentina,DEF,1,0,0,0,0,0
+86220,2057974,G. Mercado,Argentina,DEF,0,0,0,0,5,0
+86722,2057974,N. Tagliafico,Argentina,DEF,0,0,0,0,2,0
+105361,2057974,I. Strinić,Croatia,DEF,0,0,0,0,14,0
+11093,2057975,W. Troost-Ekong,Nigeria,DEF,2,0,0,0,0,0
+16443,2057975,L. Balogun,Nigeria,DEF,1,0,0,0,2,0
+54451,2057975,B. Sævarsson,Iceland,DEF,0,0,0,5,8,0
+57347,2057975,S. Ingason,Iceland,DEF,1,0,0,0,1,0
+62221,2057975,K. Árnason,Iceland,DEF,0,0,0,0,2,0
+135207,2057975,H. Magnússon,Iceland,DEF,0,0,0,3,6,0
+209792,2057975,B. Idowu,Nigeria,DEF,0,0,0,2,1,0
+332821,2057975,T. Ebuehi,Nigeria,DEF,0,0,0,0,3,0
+3355,2057976,J. Mascherano,Argentina,DEF,0,0,0,0,1,0
+16443,2057976,L. Balogun,Nigeria,DEF,1,0,0,0,3,0
+70086,2057976,N. Otamendi,Argentina,DEF,0,0,0,0,1,0
+86220,2057976,G. Mercado,Argentina,DEF,0,0,1,4,8,0
+86722,2057976,N. Tagliafico,Argentina,DEF,1,0,0,1,15,0
+209792,2057976,B. Idowu,Nigeria,DEF,0,0,0,0,8,0
+54451,2057977,B. Sævarsson,Iceland,DEF,0,0,0,1,2,0
+57347,2057977,S. Ingason,Iceland,DEF,2,0,0,0,0,0
+69964,2057977,J. Pivarić,Croatia,DEF,0,0,0,2,9,0
+135207,2057977,H. Magnússon,Iceland,DEF,1,0,0,2,4,0
+212604,2057977,T. Jedvaj,Croatia,DEF,0,0,0,2,13,0
+3310,2057978,Marcelo,Brazil,DEF,0,0,0,4,4,0
+3431,2057978,João Miranda,Brazil,DEF,1,0,0,0,0,0
+14922,2057978,R. Rodríguez,Switzerland,DEF,0,0,0,4,4,1
+20394,2057978,Thiago Silva,Brazil,DEF,1,0,0,0,0,0
+20465,2057978,S. Lichtsteiner,Switzerland,DEF,0,0,0,4,11,0
+49977,2057978,M. Lang,Switzerland,DEF,0,0,0,0,1,0
+50102,2057978,F. Schär,Switzerland,DEF,0,0,0,0,1,0
+70083,2057978,Danilo,Brazil,DEF,0,0,0,1,5,0
+7891,2057979,B. Ivanović,Serbia,DEF,0,0,0,5,14,0
+8306,2057979,A. Kolarov,Serbia,DEF,1,1,0,1,9,0
+55977,2057979,C. Gamboa,Costa Rica,DEF,1,0,0,2,4,0
+125250,2057979,Ó. Duarte,Costa Rica,DEF,1,0,0,1,2,0
+125284,2057979,J. Acosta,Costa Rica,DEF,0,0,0,0,1,0
+125286,2057979,G. González,Costa Rica,DEF,2,0,0,0,1,0
+125512,2057979,F. Calvo,Costa Rica,DEF,1,0,0,3,12,0
+3310,2057980,Marcelo,Brazil,DEF,3,0,0,7,6,0
+20394,2057980,Thiago Silva,Brazil,DEF,1,0,0,1,0,0
+40707,2057980,Fágner,Brazil,DEF,0,0,0,5,10,0
+55977,2057980,C. Gamboa,Costa Rica,DEF,1,0,0,2,2,0
+55982,2057980,B. Oviedo,Costa Rica,DEF,0,0,0,0,4,0
+125250,2057980,Ó. Duarte,Costa Rica,DEF,1,0,0,0,2,0
+125284,2057980,J. Acosta,Costa Rica,DEF,0,0,0,0,3,0
+125286,2057980,G. González,Costa Rica,DEF,0,0,0,0,1,0
+125512,2057980,F. Calvo,Costa Rica,DEF,0,0,0,0,1,0
+7891,2057981,B. Ivanović,Serbia,DEF,0,0,0,3,9,0
+8306,2057981,A. Kolarov,Serbia,DEF,0,0,0,2,14,1
+14922,2057981,R. Rodríguez,Switzerland,DEF,1,0,0,6,4,5
+20465,2057981,S. Lichtsteiner,Switzerland,DEF,1,0,0,1,14,0
+50102,2057981,F. Schär,Switzerland,DEF,1,0,0,0,0,0
+127530,2057981,D. Tošić,Serbia,DEF,0,0,0,1,0,0
+297957,2057981,M. Akanji,Switzerland,DEF,2,0,0,1,0,0
+3310,2057982,Marcelo,Brazil,DEF,0,0,0,0,4,0
+3434,2057982,Filipe Luis,Brazil,DEF,1,0,0,1,7,0
+8306,2057982,A. Kolarov,Serbia,DEF,0,0,0,5,6,2
+15214,2057982,A. Rukavina,Serbia,DEF,0,0,0,6,5,0
+20394,2057982,Thiago Silva,Brazil,DEF,1,1,0,0,0,0
+40707,2057982,Fágner,Brazil,DEF,0,0,0,0,8,0
+14922,2057983,R. Rodríguez,Switzerland,DEF,1,0,0,5,8,3
+20465,2057983,S. Lichtsteiner,Switzerland,DEF,1,0,0,5,10,0
+55977,2057983,C. Gamboa,Costa Rica,DEF,1,0,0,0,1,0
+55982,2057983,B. Oviedo,Costa Rica,DEF,2,0,0,5,6,0
+125284,2057983,J. Acosta,Costa Rica,DEF,0,0,0,0,5,0
+125575,2057983,K. Waston,Costa Rica,DEF,1,1,0,0,5,0
+3795,2057984,H. Moreno,Mexico,DEF,1,0,0,0,0,0
+14716,2057984,J. Boateng,Germany,DEF,1,0,0,1,1,0
+14795,2057984,M. Hummels,Germany,DEF,1,0,0,0,1,0
+15125,2057984,M. Plattenhardt,Germany,DEF,1,0,0,3,1,0
+112366,2057984,M. Layún,Mexico,DEF,4,0,0,0,1,1
+224593,2057984,J. Kimmich,Germany,DEF,2,0,0,11,13,0
+255387,2057984,C. Salcedo,Mexico,DEF,0,0,0,0,7,0
+448210,2057984,E. Álvarez,Mexico,DEF,0,0,0,0,1,0
+21275,2057985,A. Granqvist,Sweden,DEF,2,1,0,0,0,0
+49862,2057985,Joo-Ho Park,Korea Republic,DEF,0,0,0,2,5,0
+50806,2057985,P. Jansson,Sweden,DEF,1,0,0,0,0,0
+51217,2057985,L. Augustinsson,Sweden,DEF,0,0,0,4,10,0
+61949,2057985,M. Lustig,Sweden,DEF,0,0,0,4,12,0
+95200,2057985,Young-Gwon Kim,Korea Republic,DEF,0,0,0,1,0,0
+107529,2057985,Yong Lee,Korea Republic,DEF,0,0,0,3,6,0
+14716,2057986,J. Boateng,Germany,DEF,2,0,0,4,3,0
+14748,2057986,A. Rüdiger,Germany,DEF,0,0,0,0,1,0
+18669,2057986,J. Hector,Germany,DEF,2,0,0,3,6,0
+51217,2057986,L. Augustinsson,Sweden,DEF,0,0,0,4,5,2
+61949,2057986,M. Lustig,Sweden,DEF,0,0,0,2,8,0
+224593,2057986,J. Kimmich,Germany,DEF,0,0,0,13,5,0
+95200,2057987,Young-Gwon Kim,Korea Republic,DEF,0,0,0,1,0,0
+107413,2057987,Chul Hong,Korea Republic,DEF,0,0,0,0,1,0
+107529,2057987,Yong Lee,Korea Republic,DEF,0,0,0,1,11,0
+112366,2057987,M. Layún,Mexico,DEF,1,0,0,2,1,3
+448210,2057987,E. Álvarez,Mexico,DEF,0,0,0,0,11,0
+14795,2057988,M. Hummels,Germany,DEF,5,0,0,2,0,0
+18669,2057988,J. Hector,Germany,DEF,0,0,0,2,11,0
+95200,2057988,Young-Gwon Kim,Korea Republic,DEF,1,1,0,0,0,0
+107413,2057988,Chul Hong,Korea Republic,DEF,0,0,0,1,5,0
+107529,2057988,Yong Lee,Korea Republic,DEF,1,0,0,2,6,0
+134383,2057988,N. Süle,Germany,DEF,0,0,0,1,1,0
+224593,2057988,J. Kimmich,Germany,DEF,1,0,0,12,6,0
+3795,2057989,H. Moreno,Mexico,DEF,0,0,0,1,1,0
+21275,2057989,A. Granqvist,Sweden,DEF,0,1,0,0,0,0
+51217,2057989,L. Augustinsson,Sweden,DEF,2,1,0,1,6,3
+61949,2057989,M. Lustig,Sweden,DEF,0,0,0,3,4,0
+112366,2057989,M. Layún,Mexico,DEF,2,0,0,2,3,2
+255387,2057989,C. Salcedo,Mexico,DEF,3,0,0,1,0,0
+448210,2057989,E. Álvarez,Mexico,DEF,0,0,0,0,8,0
+36,2057990,T. Alderweireld,Belgium,DEF,0,0,0,1,0,0
+48,2057990,J. Vertonghen,Belgium,DEF,0,0,0,1,6,0
+37824,2057990,T. Meunier,Belgium,DEF,0,0,0,4,12,0
+91263,2057990,R. Torres,Panama,DEF,2,0,0,0,0,0
+116364,2057990,E. Davis,Panama,DEF,0,0,0,2,3,0
+361498,2057990,M. Murillo,Panama,DEF,1,0,0,1,4,0
+7939,2057991,A. Young,England,DEF,0,0,0,2,15,3
+8277,2057991,K. Walker,England,DEF,0,0,0,1,0,0
+8653,2057991,H. Maguire,England,DEF,2,0,1,1,0,0
+8945,2057991,K. Trippier,England,DEF,0,0,0,4,11,4
+9380,2057991,J. Stones,England,DEF,1,0,0,1,0,0
+295747,2057991,D. Bronn,Tunisia,DEF,0,0,0,2,6,0
+36,2057992,T. Alderweireld,Belgium,DEF,2,0,1,0,1,0
+48,2057992,J. Vertonghen,Belgium,DEF,0,0,0,1,4,0
+37824,2057992,T. Meunier,Belgium,DEF,2,0,1,4,2,0
+293080,2057992,H. Nagguez,Tunisia,DEF,0,0,1,5,8,0
+295747,2057992,D. Bronn,Tunisia,DEF,1,1,0,0,1,0
+7939,2057993,A. Young,England,DEF,0,0,0,0,4,0
+8277,2057993,K. Walker,England,DEF,0,0,0,0,1,0
+8292,2057993,D. Rose,England,DEF,0,0,0,1,3,0
+8653,2057993,H. Maguire,England,DEF,1,0,0,0,0,0
+8945,2057993,K. Trippier,England,DEF,0,0,1,0,2,3
+9380,2057993,J. Stones,England,DEF,2,2,0,0,0,0
+91263,2057993,R. Torres,Panama,DEF,1,0,0,0,0,0
+112679,2057993,F. Baloy,Panama,DEF,1,1,0,0,0,0
+116364,2057993,E. Davis,Panama,DEF,0,0,0,3,4,0
+361498,2057993,M. Murillo,Panama,DEF,0,0,0,2,8,0
+7860,2057994,T. Vermaelen,Belgium,DEF,0,0,0,0,3,0
+7918,2057994,P. Jones,England,DEF,0,0,0,1,0,0
+8292,2057994,D. Rose,England,DEF,0,0,0,3,14,0
+8653,2057994,H. Maguire,England,DEF,0,0,0,1,0,0
+346101,2057994,T. Alexander-Arnold,England,DEF,0,0,0,3,5,5
+91263,2057995,R. Torres,Panama,DEF,1,0,0,0,0,0
+120717,2057995,O. Haddadi,Tunisia,DEF,0,0,1,5,7,1
+120900,2057995,R. Bedoui,Tunisia,DEF,1,0,0,0,0,0
+125848,2057995,A. Machado,Panama,DEF,0,0,0,0,8,0
+131862,2057995,L. Ovalle,Panama,DEF,0,0,0,1,11,0
+293080,2057995,H. Nagguez,Tunisia,DEF,0,0,0,5,7,0
+331763,2057995,Y. Meriah,Tunisia,DEF,0,0,0,0,2,0
+14798,2057996,Ł. Piszczek,Poland,DEF,1,0,0,4,7,0
+26115,2057996,S. Sané,Senegal,DEF,1,0,0,0,0,0
+28529,2057996,Y. Sabaly,Senegal,DEF,0,0,0,1,7,0
+99391,2057996,M. Rybus,Poland,DEF,1,0,0,3,5,0
+99661,2057996,T. Cionek,Poland,DEF,0,0,0,0,2,0
+375348,2057996,M. Wagué,Senegal,DEF,0,0,0,3,6,0
+703,2057997,M. Yoshida,Japan,DEF,1,0,0,0,0,0
+20517,2057997,Y. Nagatomo,Japan,DEF,0,0,0,2,5,0
+70136,2057997,S. Arias,Colombia,DEF,0,0,0,3,12,0
+91002,2057997,O. Murillo,Colombia,DEF,1,0,0,0,0,0
+91702,2057997,J. Mojica,Colombia,DEF,0,0,0,4,15,0
+94695,2057997,H. Sakai,Japan,DEF,2,0,0,4,8,0
+257762,2057997,D. Sánchez,Colombia,DEF,0,0,0,0,1,0
+14798,2057998,Ł. Piszczek,Poland,DEF,0,0,0,1,9,0
+70136,2057998,S. Arias,Colombia,DEF,1,0,0,3,8,0
+91702,2057998,J. Mojica,Colombia,DEF,0,0,0,8,7,0
+99391,2057998,M. Rybus,Poland,DEF,0,0,0,1,3,1
+99833,2057998,B. Bereszyński,Poland,DEF,0,0,0,2,1,0
+256634,2057998,Y. Mina,Colombia,DEF,1,1,0,0,0,0
+20517,2057999,Y. Nagatomo,Japan,DEF,0,0,1,2,9,0
+26115,2057999,S. Sané,Senegal,DEF,0,0,0,1,0,0
+28529,2057999,Y. Sabaly,Senegal,DEF,2,0,0,5,8,0
+94695,2057999,H. Sakai,Japan,DEF,0,0,0,1,5,0
+94814,2057999,G. Shōji,Japan,DEF,0,0,0,0,1,0
+375348,2057999,M. Wagué,Senegal,DEF,1,1,0,7,12,0
+703,2058000,M. Yoshida,Japan,DEF,1,0,0,0,0,0
+14749,2058000,G. Sakai,Japan,DEF,1,0,0,1,1,0
+20517,2058000,Y. Nagatomo,Japan,DEF,0,0,0,2,10,0
+21097,2058000,K. Glik,Poland,DEF,1,0,0,0,0,0
+94630,2058000,T. Makino,Japan,DEF,1,0,0,0,0,0
+94695,2058000,H. Sakai,Japan,DEF,0,0,0,2,9,0
+99381,2058000,A. Jędrzejczyk,Poland,DEF,0,0,0,1,15,0
+99833,2058000,B. Bereszyński,Poland,DEF,0,0,0,2,12,0
+240032,2058000,J. Bednarek,Poland,DEF,1,1,0,0,0,0
+26022,2058001,L. Gassama,Senegal,DEF,0,0,0,0,9,0
+26115,2058001,S. Sané,Senegal,DEF,0,0,0,1,0,0
+28529,2058001,Y. Sabaly,Senegal,DEF,0,0,0,1,9,0
+70136,2058001,S. Arias,Colombia,DEF,0,0,0,0,13,0
+91702,2058001,J. Mojica,Colombia,DEF,0,0,0,3,7,0
+256634,2058001,Y. Mina,Colombia,DEF,1,1,0,0,0,0
+375348,2058001,M. Wagué,Senegal,DEF,0,0,0,0,1,0
+3305,2058002,Pepe,Portugal,DEF,1,1,0,0,1,0
+8126,2058002,José Fonte,Portugal,DEF,1,0,0,1,1,0
+20460,2058002,M. Cáceres,Uruguay,DEF,0,0,0,1,11,0
+28907,2058002,Raphaël Guerreiro,Portugal,DEF,2,0,1,10,7,1
+70381,2058002,Ricardo Pereira,Portugal,DEF,0,0,0,7,4,0
+25397,2058003,S. Umtiti,France,DEF,0,0,0,0,1,0
+86220,2058003,G. Mercado,Argentina,DEF,1,1,0,0,3,0
+86722,2058003,N. Tagliafico,Argentina,DEF,0,0,0,0,7,0
+279545,2058003,L. Hernández,France,DEF,0,0,0,2,2,0
+340646,2058003,B. Pavard,France,DEF,1,1,0,2,4,0
+3269,2058004,Jordi Alba,Spain,DEF,2,0,0,1,19,0
+3304,2058004,Nacho,Spain,DEF,0,0,0,3,3,0
+3306,2058004,Sergio Ramos,Spain,DEF,1,1,0,0,0,0
+3341,2058004,Piqué,Spain,DEF,3,1,0,0,2,0
+4501,2058004,Daniel Carvajal,Spain,DEF,1,0,0,2,4,0
+41123,2058004,Mário Fernandes,Russia,DEF,0,0,0,1,16,0
+101583,2058004,S. Ignashevich,Russia,DEF,0,1,0,0,0,0
+101647,2058004,F. Kudryashov,Russia,DEF,0,0,0,1,9,0
+103668,2058004,I. Kutepov,Russia,DEF,0,0,0,2,0,0
+20433,2058005,S. Kjær,Denmark,DEF,0,1,0,0,0,0
+25393,2058005,D. Lovren,Croatia,DEF,1,0,0,0,1,0
+55957,2058005,J. Knudsen,Denmark,DEF,0,0,0,4,18,0
+55979,2058005,M. Jørgensen,Denmark,DEF,1,1,0,0,0,0
+56394,2058005,H. Dalsgaard,Denmark,DEF,0,0,0,1,15,0
+69409,2058005,Š. Vrsaljko,Croatia,DEF,0,0,0,5,13,0
+69964,2058005,J. Pivarić,Croatia,DEF,1,0,0,3,4,0
+105361,2058005,I. Strinić,Croatia,DEF,0,0,0,4,12,0
+135103,2058005,A. Christensen,Denmark,DEF,0,0,0,1,0,0
+3434,2058006,Filipe Luis,Brazil,DEF,0,0,0,1,12,0
+40707,2058006,Fágner,Brazil,DEF,0,0,0,4,8,0
+112366,2058006,M. Layún,Mexico,DEF,1,0,0,4,4,0
+255387,2058006,C. Salcedo,Mexico,DEF,0,0,0,0,1,0
+448210,2058006,E. Álvarez,Mexico,DEF,0,0,0,0,5,0
+48,2058007,J. Vertonghen,Belgium,DEF,2,1,0,1,6,0
+8307,2058007,V. Kompany,Belgium,DEF,3,0,0,0,0,0
+20517,2058007,Y. Nagatomo,Japan,DEF,0,0,0,5,6,0
+37824,2058007,T. Meunier,Belgium,DEF,2,0,1,5,7,0
+94695,2058007,H. Sakai,Japan,DEF,0,0,0,2,3,0
+94814,2058007,G. Shōji,Japan,DEF,1,0,0,0,0,0
+7850,2058008,J. Djourou,Switzerland,DEF,0,0,0,1,1,0
+8192,2058008,M. Olsson,Sweden,DEF,0,0,0,0,1,1
+14922,2058008,R. Rodríguez,Switzerland,DEF,3,0,0,13,10,7
+49977,2058008,M. Lang,Switzerland,DEF,1,0,0,5,9,0
+51064,2058008,E. Krafth,Sweden,DEF,0,0,0,0,1,0
+51217,2058008,L. Augustinsson,Sweden,DEF,0,0,0,5,6,0
+61949,2058008,M. Lustig,Sweden,DEF,1,0,0,2,6,0
+7939,2058009,A. Young,England,DEF,0,0,0,1,10,3
+8277,2058009,K. Walker,England,DEF,0,0,0,0,1,0
+8292,2058009,D. Rose,England,DEF,1,0,0,0,2,0
+8653,2058009,H. Maguire,England,DEF,2,0,0,0,0,0
+8945,2058009,K. Trippier,England,DEF,0,1,0,5,10,4
+70136,2058009,S. Arias,Colombia,DEF,0,0,0,0,6,0
+91702,2058009,J. Mojica,Colombia,DEF,1,0,0,8,14,0
+256634,2058009,Y. Mina,Colombia,DEF,1,1,0,0,1,0
+257762,2058009,D. Sánchez,Colombia,DEF,1,0,0,0,1,0
+3309,2058010,R. Varane,France,DEF,1,1,0,0,0,0
+3433,2058010,D. Godín,Uruguay,DEF,1,0,0,0,1,0
+20460,2058010,M. Cáceres,Uruguay,DEF,3,0,0,7,11,0
+227894,2058010,J. Giménez,Uruguay,DEF,0,0,0,1,1,0
+279545,2058010,L. Hernández,France,DEF,0,0,0,1,13,0
+340646,2058010,B. Pavard,France,DEF,1,0,0,4,8,0
+48,2058011,J. Vertonghen,Belgium,DEF,0,0,0,0,5,0
+3310,2058011,Marcelo,Brazil,DEF,1,0,0,11,7,1
+3431,2058011,João Miranda,Brazil,DEF,0,0,0,0,1,0
+8307,2058011,V. Kompany,Belgium,DEF,1,0,0,0,0,0
+20394,2058011,Thiago Silva,Brazil,DEF,1,0,0,0,0,0
+37824,2058011,T. Meunier,Belgium,DEF,0,0,0,2,5,0
+40707,2058011,Fágner,Brazil,DEF,0,0,0,1,4,0
+41123,2058012,Mário Fernandes,Russia,DEF,1,1,0,3,11,0
+69396,2058012,D. Vida,Croatia,DEF,1,2,0,1,2,0
+69409,2058012,Š. Vrsaljko,Croatia,DEF,1,0,0,10,9,0
+69964,2058012,J. Pivarić,Croatia,DEF,0,0,0,5,11,0
+101583,2058012,S. Ignashevich,Russia,DEF,1,1,0,0,0,0
+101647,2058012,F. Kudryashov,Russia,DEF,0,0,0,0,8,0
+105361,2058012,I. Strinić,Croatia,DEF,0,0,0,1,7,0
+7939,2058013,A. Young,England,DEF,0,0,1,5,7,1
+8192,2058013,M. Olsson,Sweden,DEF,0,0,0,3,0,0
+8277,2058013,K. Walker,England,DEF,0,0,0,1,1,0
+8653,2058013,H. Maguire,England,DEF,2,1,0,3,0,0
+8945,2058013,K. Trippier,England,DEF,0,0,0,6,14,5
+51064,2058013,E. Krafth,Sweden,DEF,0,0,0,4,14,0
+51217,2058013,L. Augustinsson,Sweden,DEF,0,0,0,7,10,0
+36,2058014,T. Alderweireld,Belgium,DEF,2,0,0,0,2,0
+48,2058014,J. Vertonghen,Belgium,DEF,0,0,0,1,5,0
+25397,2058014,S. Umtiti,France,DEF,1,1,0,0,0,0
+279545,2058014,L. Hernández,France,DEF,0,0,0,3,5,0
+340646,2058014,B. Pavard,France,DEF,1,0,0,2,6,0
+7939,2058015,A. Young,England,DEF,0,0,0,0,14,1
+8292,2058015,D. Rose,England,DEF,0,0,0,3,5,0
+8653,2058015,H. Maguire,England,DEF,1,0,0,0,1,0
+8945,2058015,K. Trippier,England,DEF,0,1,0,3,15,3
+9380,2058015,J. Stones,England,DEF,1,0,0,0,1,0
+25393,2058015,D. Lovren,Croatia,DEF,1,0,0,0,2,0
+69409,2058015,Š. Vrsaljko,Croatia,DEF,1,0,1,8,12,0
+69964,2058015,J. Pivarić,Croatia,DEF,0,0,0,3,4,0
+105361,2058015,I. Strinić,Croatia,DEF,0,0,0,6,13,0
+36,2058016,T. Alderweireld,Belgium,DEF,1,0,0,1,0,0
+48,2058016,J. Vertonghen,Belgium,DEF,0,0,0,0,6,0
+7918,2058016,P. Jones,England,DEF,0,0,0,2,1,0
+8292,2058016,D. Rose,England,DEF,0,0,0,0,2,0
+8653,2058016,H. Maguire,England,DEF,2,0,0,0,0,0
+8945,2058016,K. Trippier,England,DEF,0,0,0,6,10,4
+37824,2058016,T. Meunier,Belgium,DEF,2,1,0,4,1,0
+25393,2058017,D. Lovren,Croatia,DEF,1,0,0,1,0,0
+69396,2058017,D. Vida,Croatia,DEF,2,0,1,0,0,0
+69409,2058017,Š. Vrsaljko,Croatia,DEF,2,0,0,6,10,0
+105361,2058017,I. Strinić,Croatia,DEF,0,0,0,2,4,0
+279545,2058017,L. Hernández,France,DEF,0,0,0,0,13,0
+340646,2058017,B. Pavard,France,DEF,0,0,0,0,8,0
