@@ -1,5 +1,5 @@
 # README
-These are the files for the book [Learn to Code with Soccer](https://codesoccer.com).
+These are the files for the book [Learn to Code with Soccer](https://codewithsoccer.com).
 
 If you're not familiar with Git or GitHub, no problem. Just click the `Source
 code` link under the latest release to download the files.  This will download
