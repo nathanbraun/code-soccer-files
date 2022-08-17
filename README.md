@@ -23,5 +23,13 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.3 (2022-08-17)
+Fixed some typos. Thanks Jon!
+
+### v0.0.2 (2022-07-22)
+Added a football version for non-American readers, where I've subbed out
+"soccer" and replaced it with "football" throughout the text. Comes with both
+so read which you prefer.
+
 ### v0.0.1 (2022-07-22)
 Adding this README!
