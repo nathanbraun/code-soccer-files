@@ -23,6 +23,10 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.4 (2022-09-09)
+Fixed a stray reference to the wrong football (American). Fixed an error in end
+of chapter exercises for Pandas filter section. Thanks Ross!
+
 ### v0.0.3 (2022-08-17)
 Fixed some typos. Thanks Jon!
 
