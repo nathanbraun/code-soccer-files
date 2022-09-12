@@ -23,6 +23,10 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.4 (2022-09-12)
+Fixed some out of date variable/sports references in merge and sql sections.
+Thanks (again) Ross!
+
 ### v0.0.4 (2022-09-09)
 Fixed a stray reference to the wrong football (American). Fixed an error in end
 of chapter exercises for Pandas filter section. Thanks Ross!
