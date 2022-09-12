@@ -22,19 +22,21 @@ shots.groupby('match_id').sum()[sum_cols].head()
 shots.groupby('match_id').agg({
     'goal': 'sum',
     'attempt': 'count',
-    'dist': 'mean'}).head()
+    'dist_m': 'mean',
+    'dist_ft': 'mean'}).head()
 
 shots.groupby('match_id').agg(
     goal = ('goal', 'sum'),
     attempt = ('attempt', 'count'),
-    ave_dist = ('dist', 'mean')).head()
+    ave_dist_m = ('dist_m', 'mean'),
+    ave_dist_ft = ('dist_ft', 'mean')).head()
 
 shots_team = shots.groupby(['match_id', 'team_id']).agg(
     goal = ('goal', 'sum'),
     attempt = ('attempt', 'count'),
-    ave_dist = ('dist', 'mean'),
-    min_dist = ('dist', 'min'),
-    max_dist = ('dist', 'max'))
+    ave_dist_m = ('dist_m', 'mean'),
+    min_dist_m = ('dist_m', 'min'),
+    max_dist_ft = ('dist_ft', 'max'))
 
 shots_team.head()
 
@@ -42,7 +44,8 @@ shots_team.head()
 shots_team.loc[[(2057954, 14358), (2058017, 4418)]]
 
 # Stacking and unstacking data
-fd = shots.query("foot in ('left', 'right')").groupby(['name', 'foot'])['dist'].mean().reset_index()
+fd = shots.query("foot in ('left', 'right')").groupby(
+    ['name', 'foot'])['dist_m'].mean().reset_index()
 fd.head()
 
 fd_reshaped = fd.set_index(['name', 'foot']).unstack()
