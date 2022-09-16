@@ -23,7 +23,12 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
-### v0.0.4 (2022-09-12)
+### v0.0.6 (2022-09-16)
+More edits to make sure book matches the code. You're on fire Ross!
+
+Also changed the book image on SendOwl to be more grass-like green vs yellow.
+
+### v0.0.5 (2022-09-12)
 Fixed some out of date variable/sports references in merge and sql sections.
 Thanks (again) Ross!
 
