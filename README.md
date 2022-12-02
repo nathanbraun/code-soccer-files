@@ -23,6 +23,9 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.8 (2022-12-02)
+Minor rewording.
+
 ### v0.0.7 (2022-09-16)
 Clean up some misc non-soccer references in modeling chapter. Thanks x3 Ross!
 
