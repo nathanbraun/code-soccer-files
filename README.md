@@ -23,6 +23,9 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.9 (2023-02-13)
+Fixed a typo in the book. Thanks Dan!
+
 ### v0.0.8 (2022-12-02)
 Minor rewording.
 
