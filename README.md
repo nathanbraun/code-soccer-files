@@ -23,6 +23,12 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.13 (2024-01-14)
+Minor uupdates for clarity.
+
+### v0.0.11 (2023-02-13)
+Fixed some typos in the book. Thanks Paul!
+
 ### v0.0.9 (2023-02-13)
 Fixed a typo in the book. Thanks Dan!
 
