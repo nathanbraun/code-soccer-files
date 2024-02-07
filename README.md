@@ -23,7 +23,10 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
-### v0.0.13 (2024-01-22)
+### v0.0.15 (2024-02-07)
+Misc typos.
+
+### v0.0.14 (2024-01-22)
 Changed some terminology based on reader feedback (thanks Dillion!)
 
 ### v0.0.13 (2024-01-14)
