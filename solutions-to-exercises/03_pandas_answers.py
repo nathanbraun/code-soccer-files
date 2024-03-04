@@ -87,7 +87,7 @@ pm['at_least_one_throwin'].head()
 # 3.1.5
 #######
 pm['len_last_name'] = (pm['name']
-                       .apply(lambda x: len(x.split('.')[-1])))
+                       .apply(lambda x: len(x.split(' ')[-1])))
 pm['len_last_name'].head()
 
 #######
