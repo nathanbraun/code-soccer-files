@@ -23,6 +23,9 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.0.17 (2024-03-12)
+Fix some typos (thanks Dillion!)
+
 ### v0.0.16 (2024-03-04)
 Fixed the answer to exercise 3.1.5 (thanks Akash!)
 
