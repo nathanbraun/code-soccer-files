@@ -23,6 +23,10 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.1.0 (2024-04-16)
+Change scraping example to get data from worldfootball.net, since
+myfootballfacts.com was no longer working.
+
 ### v0.0.17 (2024-03-12)
 Fix some typos (thanks Dillion!)
 
