@@ -16,8 +16,8 @@ pg[['match_id', 'player_id', 'date']] = (
 
 # book picks up here:
 
-pg.mean()
-pg.max()
+pg[['shot', 'goal', 'assist', 'pass', 'throw', 'corner']].mean()
+pg[['name', 'shot', 'goal', 'assist', 'pass', 'throw', 'corner']].max()
 
 # Axis
 pg[['shot', 'goal', 'assist', 'pass']].mean(axis=0)
