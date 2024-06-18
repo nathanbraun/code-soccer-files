@@ -1,12 +1,9 @@
 import pandas as pd
 import random
-from pandas import DataFrame
 import seaborn as sns
-import numpy as np
 import matplotlib.pyplot as plt
 from os import path
 
-pd.options.mode.chained_assignment = None
 %matplotlib qt
 
 DATA_DIR = './data'
@@ -38,7 +35,7 @@ g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
 
 import matplotlib.image as mpimg
-map_img = mpimg.imread('./fig/soccer_field.png')
+map_img = mpimg.imread('./data/soccer_field.png')
 
 # scatter plot with field overlay
 g = sns.relplot(data=dfs, x='x', y='y', kind='scatter', size=5)
@@ -93,7 +90,7 @@ g = (sns.FacetGrid(dfs, row='foot', hue='foot', col='goal')
      .map(sns.kdeplot, 'x', 'y', alpha=0.5))
 g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
-for ax in g.fig.axes:
+for ax in g.figure.axes:
     ax.imshow(map_img, zorder=0, extent=[0, 120, 0, 75])
 
 # turn shading off - by team
@@ -101,5 +98,5 @@ g = (sns.FacetGrid(dfs, col='team', col_wrap=4, height=2, hue='team')
      .map(sns.kdeplot, 'x', 'y', alpha=0.5))
 g.set(yticks=[], xticks=[], xlabel=None, ylabel=None)
 g.despine(left=True, bottom=True)
-for ax in g.fig.axes:
+for ax in g.figure.axes:
     ax.imshow(map_img, zorder=0, extent=[0, 120, 0, 75])

@@ -23,6 +23,9 @@ If I were using Windows, it might look like this:
 Set these aside for now and we'll pick them up in chapter 2.
 
 ## Changelog
+### v0.2.0 (2024-06-18)
+Cleaned up plotting chapter to avoid misc Seaborn warnings.
+
 ### v0.1.1 (2024-04-22)
 Fix Pandas `mean` example. More: Pandas changed their defaults to throw an
 error if you try to call this on string columns. Fixed example to explicitely
