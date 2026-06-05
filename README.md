@@ -1,4 +1,15 @@
-# README
+# Learn to Code with Soccer — files
+
+> [!NOTE]
+> ## This book is now free!
+> *Learn to Code with Soccer* is no longer for sale — it's free. It comes in two editions; grab whichever you prefer:
+> - **[Soccer edition](https://github.com/nathanbraun/code-soccer-files/releases/download/book/learn-to-code-with-soccer.pdf)** — American terminology ("soccer").
+> - **[Football edition](https://github.com/nathanbraun/code-soccer-files/releases/download/book/learn-to-code-with-football.pdf)** — for international readers, with "soccer" replaced by "football" throughout.
+>
+> The code you work through in the book is still in this repo (see below for how to grab it).
+>
+> Learning to code today? My newer, AI-era book is at **[techtoolsbook.com](https://techtoolsbook.com)**.
+
 These are the files for the book [Learn to Code with Soccer](https://codewithsoccer.com).
 
 If you're not familiar with Git or GitHub, no problem. Just click the `Source
