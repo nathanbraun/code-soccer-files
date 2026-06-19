@@ -66,8 +66,8 @@ pg['is_sa'] = pg['team'].apply(is_south_america)
 
 pg[['name', 'team', 'is_sa']].sample(5)
 
-pg['is_sa_alternate'] = pg['team'].apply(lambda x: x in [
-    ['Brazil', 'Uruguay', 'Colombia', 'Argentina', 'Costa Rica', 'Peru']])
+pg['is_sa_alternate'] = pg['team'].apply(lambda x: x in 
+    ['Brazil', 'Uruguay', 'Colombia', 'Argentina', 'Costa Rica', 'Peru'])
 
 # Dropping Columns
 pg.drop('is_sa_alternate', axis=1, inplace=True)
